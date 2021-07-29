@@ -5,3 +5,5 @@ randomized: textures, BGM, environment settings, player settings
 seed-based
 
 somnium > umisomn
+
+dream types: 3D, image

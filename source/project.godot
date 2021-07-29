@@ -21,6 +21,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
+globals="*res://globals/globals.tscn"
 fader="*res://interface/fader/fader.tscn"
 fullscreen="*res://interface/fullscreen/fullscreen.tscn"
 screencap="*res://interface/screencap/screencap.tscn"

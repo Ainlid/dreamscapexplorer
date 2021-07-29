@@ -67,6 +67,7 @@ func _die():
 		dead = true
 		playable = false
 		fader._reload_scene()
+		globals._dream_rng_refresh()
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion and playable:

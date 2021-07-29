@@ -35,8 +35,7 @@ func _fade_out():
 	tween.start()
 
 func _reload_scene():
-	var current_scene = get_tree().get_current_scene().get_name()
-	path = "res://scenes/" + current_scene + ".tscn"
+	path = get_tree().get_current_scene().get_filename()
 	_fade_out()
 	timer.start()
 
