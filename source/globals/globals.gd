@@ -1,9 +1,9 @@
 extends Node
 
-const textures = [preload("res://images/textures/test1.png"),
-preload("res://images/textures/test2.png"),
-preload("res://images/textures/test3.png"),
-preload("res://images/textures/test4.png")]
+const materials = [preload("res://materials/test1.tres"),
+preload("res://materials/test2.tres"),
+preload("res://materials/test3.tres"),
+preload("res://materials/test4.tres")]
 
 const layouts = [preload("res://layouts/test.tscn")]
 

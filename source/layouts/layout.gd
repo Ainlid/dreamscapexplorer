@@ -10,8 +10,6 @@ func _ready():
 
 func _set_materials():
 	for n in mesh.get_surface_count():
-		var new_mat = SpatialMaterial.new()
-		var new_tex_id = globals.dream_rng.randi()%globals.textures.size()
-		new_mat.albedo_texture = globals.textures[new_tex_id]
-		mesh.surface_set_material(n, new_mat)
+		var mat_id = globals.dream_rng.randi()%globals.materials.size()
+		mesh.surface_set_material(n, globals.materials[n])
 
