@@ -1,0 +1,73 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://interface/pause_menu/pause_menu.gd" type="Script" id=1]
+[ext_resource path="res://interface/styles/label.tres" type="StyleBox" id=2]
+[ext_resource path="res://interface/fonts/font_italic.tres" type="DynamicFont" id=3]
+[ext_resource path="res://interface/controls/controls.tscn" type="PackedScene" id=4]
+[ext_resource path="res://interface/fonts/font_regular.tres" type="DynamicFont" id=5]
+
+[node name="pause_menu" type="CanvasLayer"]
+pause_mode = 2
+layer = 90
+script = ExtResource( 1 )
+
+[node name="menu" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="rect" type="ColorRect" parent="menu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.25098 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="menu"]
+margin_left = 672.013
+margin_top = 345.904
+margin_right = 1019.01
+margin_bottom = 401.904
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = ExtResource( 3 )
+text = "paused"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_resume" type="Button" parent="menu"]
+margin_left = 766.788
+margin_top = 484.945
+margin_right = 1113.79
+margin_bottom = 540.945
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 5 )
+text = "resume"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_main_menu" type="Button" parent="menu"]
+margin_left = 723.976
+margin_top = 616.108
+margin_right = 1070.98
+margin_bottom = 672.108
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 5 )
+text = "main menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="controls" parent="menu" instance=ExtResource( 4 )]
+margin_left = 45.1899
+margin_top = 54.7036
+margin_right = 565.19
+margin_bottom = 516.704
+
+[connection signal="pressed" from="menu/button_resume" to="." method="_unpause_game"]
+[connection signal="pressed" from="menu/button_main_menu" to="." method="_main_menu"]

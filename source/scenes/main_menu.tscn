@@ -1,0 +1,83 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://interface/styles/label.tres" type="StyleBox" id=1]
+[ext_resource path="res://interface/controls/controls.tscn" type="PackedScene" id=2]
+[ext_resource path="res://interface/play_button.gd" type="Script" id=4]
+[ext_resource path="res://interface/quit_button.gd" type="Script" id=5]
+[ext_resource path="res://interface/fonts/font_italic.tres" type="DynamicFont" id=6]
+[ext_resource path="res://interface/fonts/font_regular.tres" type="DynamicFont" id=7]
+
+[node name="main_menu" type="Spatial"]
+
+[node name="bgm" type="AudioStreamPlayer" parent="."]
+autoplay = true
+
+[node name="title" type="Label" parent="."]
+margin_left = 138.0
+margin_top = 130.0
+margin_right = 300.0
+margin_bottom = 188.0
+custom_styles/normal = ExtResource( 1 )
+custom_fonts/font = ExtResource( 6 )
+text = "umisomn"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="credit" type="Label" parent="."]
+margin_left = 1568.0
+margin_top = 970.0
+margin_right = 1876.0
+margin_bottom = 1035.0
+custom_styles/normal = ExtResource( 1 )
+custom_fonts/font = ExtResource( 7 )
+text = "Ainlid, 2021"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="play_button" type="Button" parent="."]
+margin_left = 574.0
+margin_top = 410.0
+margin_right = 884.0
+margin_bottom = 470.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 7 )
+text = "play"
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="quit_button" type="Button" parent="."]
+margin_left = 434.0
+margin_top = 710.0
+margin_right = 742.0
+margin_bottom = 770.0
+focus_mode = 0
+mouse_default_cursor_shape = 2
+custom_fonts/font = ExtResource( 7 )
+text = "quit"
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="timer" type="Timer" parent="quit_button"]
+wait_time = 0.5
+one_shot = true
+
+[node name="controls" parent="." instance=ExtResource( 2 )]
+margin_left = 1350.0
+margin_top = 52.0
+margin_right = 1844.0
+margin_bottom = 499.0
+
+[connection signal="pressed" from="play_button" to="play_button" method="_play_game"]
+[connection signal="pressed" from="quit_button" to="quit_button" method="_quit_pressed"]
+[connection signal="timeout" from="quit_button/timer" to="quit_button" method="_quit_game"]

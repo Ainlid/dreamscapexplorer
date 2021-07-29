@@ -1,0 +1,16 @@
+-models-
+clean up geometry and materials > smart project UVs
+
+-textures-
+
+albedo:
+https://ditherit.com/
+CMYK
+
+-audio-
+
+music:
+high pass > bitcrush > -1% detuned duplicate
+
+ideas:
+winter park, evening or early morning, cute, medieval elements

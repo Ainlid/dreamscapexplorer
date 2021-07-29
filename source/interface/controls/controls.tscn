@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/fonts/font_regular.tres" type="DynamicFont" id=1]
+[ext_resource path="res://interface/styles/label.tres" type="StyleBox" id=2]
+[ext_resource path="res://interface/controls/controls.gd" type="Script" id=3]
+
+[node name="controls" type="Control"]
+margin_right = 520.0
+margin_bottom = 462.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="."]
+margin_left = 10.0
+margin_top = 112.0
+margin_right = 504.0
+margin_bottom = 453.0
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = ExtResource( 1 )
+text = "f11 - toggle fullscreen
+f12 - take a screenshot
+escape - pause
+w/a/s/d - walk
+space - jump
+shift while walking - run"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button" type="Button" parent="."]
+margin_right = 266.0
+margin_bottom = 78.0
+focus_mode = 0
+custom_fonts/font = ExtResource( 1 )
+toggle_mode = true
+text = "show controls"
+
+[connection signal="toggled" from="button" to="." method="_button_toggled"]
