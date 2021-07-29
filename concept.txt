@@ -4,7 +4,6 @@ limited pool of essential assets
 randomized: textures, BGM, environment settings, player settings
 seed-based
 
-somnium > umisomn
-oneiron > orineon/noinero
+oneiron > neronoi
 
 dream types: 3D, image
