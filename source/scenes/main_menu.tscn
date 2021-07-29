@@ -15,11 +15,11 @@ autoplay = true
 [node name="title" type="Label" parent="."]
 margin_left = 138.0
 margin_top = 130.0
-margin_right = 300.0
+margin_right = 507.0
 margin_bottom = 188.0
 custom_styles/normal = ExtResource( 1 )
 custom_fonts/font = ExtResource( 6 )
-text = "neronoi"
+text = "dreamscape explorer"
 align = 1
 valign = 1
 __meta__ = {
@@ -41,10 +41,10 @@ __meta__ = {
 }
 
 [node name="play_button" type="Button" parent="."]
-margin_left = 574.0
-margin_top = 410.0
-margin_right = 884.0
-margin_bottom = 470.0
+margin_left = 138.0
+margin_top = 334.0
+margin_right = 448.0
+margin_bottom = 394.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
 custom_fonts/font = ExtResource( 7 )
@@ -55,10 +55,10 @@ __meta__ = {
 }
 
 [node name="quit_button" type="Button" parent="."]
-margin_left = 434.0
-margin_top = 710.0
-margin_right = 742.0
-margin_bottom = 770.0
+margin_left = 138.0
+margin_top = 450.0
+margin_right = 446.0
+margin_bottom = 510.0
 focus_mode = 0
 mouse_default_cursor_shape = 2
 custom_fonts/font = ExtResource( 7 )

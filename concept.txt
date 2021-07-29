@@ -1,9 +1,9 @@
+dreamscape explorer
+
 LSD dream emulator fan game
 no charts or hidden scoring systems, just RNG
 limited pool of essential assets
 randomized: textures, BGM, environment settings, player settings
 seed-based
-
-oneiron > neronoi
 
 dream types: 3D, image
