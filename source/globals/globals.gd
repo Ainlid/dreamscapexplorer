@@ -1,5 +1,9 @@
 extends Node
 
+const bgm = [preload("res://bgm/bgm1.wav"),
+preload("res://bgm/bgm2.wav"),
+preload("res://bgm/bgm3.wav")]
+
 const materials = [preload("res://materials/test1.tres"),
 preload("res://materials/test2.tres"),
 preload("res://materials/test3.tres"),
