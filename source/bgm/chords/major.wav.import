@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/major.wav-2ac3f54e02472a6e3c27438cdebe309e.sample"
+
+[deps]
+
+source_file="res://bgm/chords/major.wav"
+dest_files=[ "res://.import/major.wav-2ac3f54e02472a6e3c27438cdebe309e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

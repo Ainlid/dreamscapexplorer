@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/minor.wav-f2b0cc4e3a4a16d92951ec6f023e257d.sample"
+
+[deps]
+
+source_file="res://bgm/chords/minor.wav"
+dest_files=[ "res://.import/minor.wav-f2b0cc4e3a4a16d92951ec6f023e257d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

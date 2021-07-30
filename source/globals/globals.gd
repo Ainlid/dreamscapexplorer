@@ -1,8 +1,7 @@
 extends Node
 
-const bgm = [preload("res://bgm/bgm1.wav"),
-preload("res://bgm/bgm2.wav"),
-preload("res://bgm/bgm3.wav")]
+const major_chord = preload("res://bgm/chords/major.wav")
+const minor_chord = preload("res://bgm/chords/minor.wav")
 
 const materials = [preload("res://materials/test1.tres"),
 preload("res://materials/test2.tres"),
