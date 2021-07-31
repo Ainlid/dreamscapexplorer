@@ -7,9 +7,3 @@ collisions:
 1. model collisions as separate object
 2. generate trimesh static body from the collision object
 3. hide the collision object
-
-chords:
-1. record 4 seconds of a triangle wave chord from LMMS
-2. reverb
-3. 10x paulstretch
-4. find looping part about 20 seconds

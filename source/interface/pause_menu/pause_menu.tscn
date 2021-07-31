@@ -27,9 +27,9 @@ __meta__ = {
 }
 
 [node name="label" type="Label" parent="menu"]
-margin_left = 672.013
+margin_left = 768.013
 margin_top = 345.904
-margin_right = 1019.01
+margin_right = 1115.01
 margin_bottom = 401.904
 custom_styles/normal = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
@@ -40,10 +40,10 @@ __meta__ = {
 }
 
 [node name="button_resume" type="Button" parent="menu"]
-margin_left = 766.788
-margin_top = 484.945
-margin_right = 1113.79
-margin_bottom = 540.945
+margin_left = 768.013
+margin_top = 460.945
+margin_right = 1115.02
+margin_bottom = 516.945
 mouse_default_cursor_shape = 2
 custom_fonts/font = ExtResource( 5 )
 text = "resume"
@@ -52,10 +52,10 @@ __meta__ = {
 }
 
 [node name="button_main_menu" type="Button" parent="menu"]
-margin_left = 723.976
-margin_top = 616.108
-margin_right = 1070.98
-margin_bottom = 672.108
+margin_left = 768.013
+margin_top = 572.108
+margin_right = 1115.02
+margin_bottom = 628.108
 mouse_default_cursor_shape = 2
 custom_fonts/font = ExtResource( 5 )
 text = "main menu"

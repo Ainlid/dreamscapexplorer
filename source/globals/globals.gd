@@ -1,7 +1,7 @@
 extends Node
 
-const major_chord = preload("res://bgm/chords/major.wav")
-const minor_chord = preload("res://bgm/chords/minor.wav")
+const samples = [preload("res://bgm_gen/samples/sine.wav"),
+preload("res://bgm_gen/samples/piano.wav")]
 
 const materials = [preload("res://materials/test1.tres"),
 preload("res://materials/test2.tres"),
