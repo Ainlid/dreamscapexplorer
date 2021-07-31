@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/synth3.wav-7c5ffdb230d6d16d45c1bccb338c9f33.sample"
+
+[deps]
+
+source_file="res://bgm_gen/korg_monopoly/synth3.wav"
+dest_files=[ "res://.import/synth3.wav-7c5ffdb230d6d16d45c1bccb338c9f33.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -5,7 +5,15 @@ preload("res://bgm_gen/juno106/synth2.wav"),
 preload("res://bgm_gen/juno106/synth3.wav"),
 preload("res://bgm_gen/juno106/synth4.wav"),
 preload("res://bgm_gen/juno106/synth5.wav"),
-preload("res://bgm_gen/juno106/synth6.wav")]
+preload("res://bgm_gen/juno106/synth6.wav"),
+preload("res://bgm_gen/korg_monopoly/synth1.wav"),
+preload("res://bgm_gen/korg_monopoly/synth2.wav"),
+preload("res://bgm_gen/korg_monopoly/synth3.wav"),
+preload("res://bgm_gen/korg_monopoly/synth4.wav"),
+preload("res://bgm_gen/roland_jd800/synth1.wav"),
+preload("res://bgm_gen/roland_jd800/synth2.wav"),
+preload("res://bgm_gen/roland_jd800/synth3.wav"),
+preload("res://bgm_gen/roland_jd800/synth4.wav")]
 
 const materials = [preload("res://materials/test1.tres"),
 preload("res://materials/test2.tres"),
