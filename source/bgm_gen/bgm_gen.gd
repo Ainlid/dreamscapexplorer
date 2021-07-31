@@ -15,13 +15,21 @@ var bass_rhythm_seq = []
 var current_note = 0
 
 func _ready():
+	_bgm_start()
+
+func _bgm_start():
+	_set_samples()
 	_make_scale()
 	_sequence()
+	tempo = globals.dream_rng.randf_range(100.0, 140.0)
 	timer.wait_time = 60.0/tempo
 	timer.start()
 
 func _set_samples():
-	pass
+	var sample_id = globals.dream_rng.randi()%globals.samples.size()
+	var sample = globals.samples[sample_id]
+	melody.stream = sample
+	bass.stream = sample
 
 func _make_scale():
 	for n in 7:

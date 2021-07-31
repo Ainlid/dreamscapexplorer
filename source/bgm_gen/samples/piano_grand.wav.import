@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/sine.wav-c325186b5f15b71622afeb03302d24f6.sample"
+path="res://.import/piano_grand.wav-fb2f786e04bf04e7e1c6f3b7a9351df1.sample"
 
 [deps]
 
-source_file="res://bgm_gen/samples/sine.wav"
-dest_files=[ "res://.import/sine.wav-c325186b5f15b71622afeb03302d24f6.sample" ]
+source_file="res://bgm_gen/samples/piano_grand.wav"
+dest_files=[ "res://.import/piano_grand.wav-fb2f786e04bf04e7e1c6f3b7a9351df1.sample" ]
 
 [params]
 

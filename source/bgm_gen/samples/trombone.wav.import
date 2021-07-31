@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/trombone.wav-e241f2d00be225b229b7ca8492999034.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/trombone.wav"
+dest_files=[ "res://.import/trombone.wav-e241f2d00be225b229b7ca8492999034.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

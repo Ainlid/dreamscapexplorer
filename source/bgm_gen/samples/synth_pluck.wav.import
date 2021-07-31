@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/synth_pluck.wav-035c4884ca4e90f7636813657a83a7ce.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/synth_pluck.wav"
+dest_files=[ "res://.import/synth_pluck.wav-035c4884ca4e90f7636813657a83a7ce.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
