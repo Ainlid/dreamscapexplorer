@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/scifi.wav-81213572de512ea3e16fd9b8274dd441.sample"
+path="res://.import/synth4.wav-3b00b474ea44b99cc389a0746f793441.sample"
 
 [deps]
 
-source_file="res://bgm_gen/samples/scifi.wav"
-dest_files=[ "res://.import/scifi.wav-81213572de512ea3e16fd9b8274dd441.sample" ]
+source_file="res://bgm_gen/juno106/synth4.wav"
+dest_files=[ "res://.import/synth4.wav-3b00b474ea44b99cc389a0746f793441.sample" ]
 
 [params]
 

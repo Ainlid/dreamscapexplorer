@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/synth_pluck.wav-035c4884ca4e90f7636813657a83a7ce.sample"
+path="res://.import/synth1.wav-93c364bb1579717b4719b111a58f2bbc.sample"
 
 [deps]
 
-source_file="res://bgm_gen/samples/synth_pluck.wav"
-dest_files=[ "res://.import/synth_pluck.wav-035c4884ca4e90f7636813657a83a7ce.sample" ]
+source_file="res://bgm_gen/juno106/synth1.wav"
+dest_files=[ "res://.import/synth1.wav-93c364bb1579717b4719b111a58f2bbc.sample" ]
 
 [params]
 

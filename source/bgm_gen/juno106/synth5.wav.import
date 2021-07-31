@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/piano_grand.wav-fb2f786e04bf04e7e1c6f3b7a9351df1.sample"
+path="res://.import/synth5.wav-8b721ab5fd0dae040c5da7aef463d838.sample"
 
 [deps]
 
-source_file="res://bgm_gen/samples/piano_grand.wav"
-dest_files=[ "res://.import/piano_grand.wav-fb2f786e04bf04e7e1c6f3b7a9351df1.sample" ]
+source_file="res://bgm_gen/juno106/synth5.wav"
+dest_files=[ "res://.import/synth5.wav-8b721ab5fd0dae040c5da7aef463d838.sample" ]
 
 [params]
 

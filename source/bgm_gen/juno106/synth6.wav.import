@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/slap_bass.wav-f49a20ddef8130cc661ed8c133a56e40.sample"
+path="res://.import/synth6.wav-868465d007318a84d6e4811c660519cd.sample"
 
 [deps]
 
-source_file="res://bgm_gen/samples/slap_bass.wav"
-dest_files=[ "res://.import/slap_bass.wav-f49a20ddef8130cc661ed8c133a56e40.sample" ]
+source_file="res://bgm_gen/juno106/synth6.wav"
+dest_files=[ "res://.import/synth6.wav-868465d007318a84d6e4811c660519cd.sample" ]
 
 [params]
 

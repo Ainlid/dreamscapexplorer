@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/trombone.wav-e241f2d00be225b229b7ca8492999034.sample"
+path="res://.import/synth3.wav-febeaaa35a6ba95fffbe3cc24ae25de8.sample"
 
 [deps]
 
-source_file="res://bgm_gen/samples/trombone.wav"
-dest_files=[ "res://.import/trombone.wav-e241f2d00be225b229b7ca8492999034.sample" ]
+source_file="res://bgm_gen/juno106/synth3.wav"
+dest_files=[ "res://.import/synth3.wav-febeaaa35a6ba95fffbe3cc24ae25de8.sample" ]
 
 [params]
 

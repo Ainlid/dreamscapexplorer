@@ -32,8 +32,15 @@ func _set_samples():
 	bass.stream = sample
 
 func _make_scale():
-	for n in 7:
-		note_scale.append(globals.dream_rng.randi()%12)
+	#for n in 7:
+	#	note_scale.append(globals.dream_rng.randi()%12)
+	var scale_chance = globals.dream_rng.randf()
+	if scale_chance > 0.5:
+		#major scale
+		note_scale = [0, 2, 4, 5, 7, 9, 11]
+	else:
+		#minor scale
+		note_scale = [0, 2, 3, 5, 7, 8, 10]
 
 func _sequence():
 	for melody_notes in 16:
