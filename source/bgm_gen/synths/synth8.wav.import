@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/synth4.wav-ec3132da2e58a1c380e3ac98026a5fce.sample"
+path="res://.import/synth8.wav-dba744f4e348011823193ea0c550cfc0.sample"
 
 [deps]
 
-source_file="res://bgm_gen/roland_jd800/synth4.wav"
-dest_files=[ "res://.import/synth4.wav-ec3132da2e58a1c380e3ac98026a5fce.sample" ]
+source_file="res://bgm_gen/synths/synth8.wav"
+dest_files=[ "res://.import/synth8.wav-dba744f4e348011823193ea0c550cfc0.sample" ]
 
 [params]
 

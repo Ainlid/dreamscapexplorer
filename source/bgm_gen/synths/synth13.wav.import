@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/synth3.wav-febeaaa35a6ba95fffbe3cc24ae25de8.sample"
+path="res://.import/synth13.wav-03ac23d54b9f11462b01fb099ea222ce.sample"
 
 [deps]
 
-source_file="res://bgm_gen/juno106/synth3.wav"
-dest_files=[ "res://.import/synth3.wav-febeaaa35a6ba95fffbe3cc24ae25de8.sample" ]
+source_file="res://bgm_gen/synths/synth13.wav"
+dest_files=[ "res://.import/synth13.wav-03ac23d54b9f11462b01fb099ea222ce.sample" ]
 
 [params]
 

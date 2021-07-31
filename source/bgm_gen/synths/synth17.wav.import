@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/synth4.wav-ff99fd0507680dc75351178abeb732c8.sample"
+path="res://.import/synth17.wav-8846699ac9402b1c0c0902b01d495a08.sample"
 
 [deps]
 
-source_file="res://bgm_gen/korg_monopoly/synth4.wav"
-dest_files=[ "res://.import/synth4.wav-ff99fd0507680dc75351178abeb732c8.sample" ]
+source_file="res://bgm_gen/synths/synth17.wav"
+dest_files=[ "res://.import/synth17.wav-8846699ac9402b1c0c0902b01d495a08.sample" ]
 
 [params]
 
