@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/snare7.wav-6cf245e1ea5ed9b26c00a68dd4b67d11.sample"
+
+[deps]
+
+source_file="res://bgm_gen/drums_snare/snare7.wav"
+dest_files=[ "res://.import/snare7.wav-6cf245e1ea5ed9b26c00a68dd4b67d11.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

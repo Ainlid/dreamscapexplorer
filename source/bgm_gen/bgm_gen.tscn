@@ -9,6 +9,13 @@ script = ExtResource( 1 )
 
 [node name="bass" type="AudioStreamPlayer" parent="."]
 
+[node name="kick" type="AudioStreamPlayer" parent="."]
+
+[node name="snare" type="AudioStreamPlayer" parent="."]
+
+[node name="hihat" type="AudioStreamPlayer" parent="."]
+volume_db = -4.0
+
 [node name="timer" type="Timer" parent="."]
 
 [connection signal="timeout" from="timer" to="." method="_timeout"]

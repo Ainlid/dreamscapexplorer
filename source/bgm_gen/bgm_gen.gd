@@ -2,6 +2,10 @@ extends Node
 
 onready var melody = $melody
 onready var bass = $bass
+onready var kick = $kick
+onready var snare = $snare
+onready var hihat = $hihat
+
 onready var timer =$timer
 var tempo = 120.0
 
@@ -11,6 +15,8 @@ var melody_note_seq = []
 var melody_rhythm_seq = []
 var bass_note_seq = []
 var bass_rhythm_seq = []
+var snare_seq = []
+var hihat_seq = []
 
 var current_note = 0
 
@@ -27,9 +33,19 @@ func _bgm_start():
 
 func _set_samples():
 	var synth_id = globals.dream_rng.randi()%globals.synths.size()
-	var synth = globals.synths[synth_id]
-	melody.stream = synth
-	bass.stream = synth
+	var synth_sample = globals.synths[synth_id]
+	melody.stream = synth_sample
+	bass.stream = synth_sample
+	#drums
+	var kick_id = globals.dream_rng.randi()%globals.kicks.size()
+	var kick_sample = globals.kicks[kick_id]
+	kick.stream = kick_sample
+	var snare_id = globals.dream_rng.randi()%globals.snares.size()
+	var snare_sample = globals.snares[snare_id]
+	snare.stream = snare_sample
+	var hihat_id = globals.dream_rng.randi()%globals.hihats.size()
+	var hihat_sample = globals.hihats[hihat_id]
+	hihat.stream = hihat_sample
 
 func _make_scale():
 	var scale_chance = globals.dream_rng.randf()
@@ -53,6 +69,16 @@ func _sequence():
 	for bass_plays in 16:
 		var bass_rhythm_chance = globals.dream_rng.randf()
 		bass_rhythm_seq.append(bass_rhythm_chance)
+	#drums
+	for snare_plays in 16:
+		if snare_plays%2:
+			var snare_chance = globals.dream_rng.randf()
+			snare_seq.append(snare_chance)
+		else:
+			snare_seq.append(0.0)
+	for hihat_plays in 16:
+		var hihat_chance = globals.dream_rng.randf()
+		hihat_seq.append(hihat_chance)
 
 func _note_to_pitch(note_value):
 	return pow(2.0, note_value/12.0)
@@ -65,6 +91,13 @@ func _timeout():
 	bass.pitch_scale = _note_to_pitch(bass_note_seq[current_note] - 12.0)
 	if bass_rhythm_seq[current_note] > 0.5:
 		bass.play()
+	#drums
+	if current_note%4 == 1:
+		kick.play()
+	if snare_seq[current_note] > 0.5:
+		snare.play()
+	if hihat_seq[current_note] > 0.5:
+		hihat.play()
 	#loop
 	if current_note < 15:
 		current_note += 1

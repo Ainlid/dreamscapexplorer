@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/kick9.wav-8d6d58e071bbc368d8e2e84b6690811d.sample"
+
+[deps]
+
+source_file="res://bgm_gen/drums_kick/kick9.wav"
+dest_files=[ "res://.import/kick9.wav-8d6d58e071bbc368d8e2e84b6690811d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

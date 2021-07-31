@@ -22,6 +22,35 @@ preload("res://bgm_gen/synths/synth18.wav"),
 preload("res://bgm_gen/synths/synth19.wav"),
 preload("res://bgm_gen/synths/synth20.wav")]
 
+const kicks = [preload("res://bgm_gen/drums_kick/kick1.wav"),
+preload("res://bgm_gen/drums_kick/kick2.wav"),
+preload("res://bgm_gen/drums_kick/kick3.wav"),
+preload("res://bgm_gen/drums_kick/kick4.wav"),
+preload("res://bgm_gen/drums_kick/kick5.wav"),
+preload("res://bgm_gen/drums_kick/kick6.wav"),
+preload("res://bgm_gen/drums_kick/kick7.wav"),
+preload("res://bgm_gen/drums_kick/kick8.wav"),
+preload("res://bgm_gen/drums_kick/kick9.wav"),
+preload("res://bgm_gen/drums_kick/kick10.wav")]
+
+const snares = [preload("res://bgm_gen/drums_snare/snare1.wav"),
+preload("res://bgm_gen/drums_snare/snare2.wav"),
+preload("res://bgm_gen/drums_snare/snare3.wav"),
+preload("res://bgm_gen/drums_snare/snare4.wav"),
+preload("res://bgm_gen/drums_snare/snare5.wav"),
+preload("res://bgm_gen/drums_snare/snare6.wav"),
+preload("res://bgm_gen/drums_snare/snare7.wav"),
+preload("res://bgm_gen/drums_snare/snare8.wav"),
+preload("res://bgm_gen/drums_snare/snare9.wav"),
+preload("res://bgm_gen/drums_snare/snare10.wav")]
+
+const hihats = [preload("res://bgm_gen/drums_hihat/hihat1.wav"),
+preload("res://bgm_gen/drums_hihat/hihat2.wav"),
+preload("res://bgm_gen/drums_hihat/hihat3.wav"),
+preload("res://bgm_gen/drums_hihat/hihat4.wav"),
+preload("res://bgm_gen/drums_hihat/hihat5.wav"),
+preload("res://bgm_gen/drums_hihat/hihat6.wav")]
+
 const materials = [preload("res://materials/test1.tres"),
 preload("res://materials/test2.tres"),
 preload("res://materials/test3.tres"),
