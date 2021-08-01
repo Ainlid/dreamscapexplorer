@@ -16,7 +16,7 @@ _global_script_class_icons={
 
 config/name="dreamscape explorer"
 config/description="dream diary"
-run/main_scene="res://scenes/main_menu.tscn"
+run/main_scene="res://interface/main_menu/main_menu.tscn"
 config/icon="res://icon.png"
 
 [autoload]
