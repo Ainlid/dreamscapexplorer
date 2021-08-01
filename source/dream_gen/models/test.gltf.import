@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/test.gltf-74b9cbdcf6ed10dc80e71fd466e91ae8.scn"
+path="res://.import/test.gltf-753f5bed79c037fae763e94fdd1afece.scn"
 
 [deps]
 
-source_file="res://models/test.gltf"
-dest_files=[ "res://.import/test.gltf-74b9cbdcf6ed10dc80e71fd466e91ae8.scn" ]
+source_file="res://dream_gen/models/test.gltf"
+dest_files=[ "res://.import/test.gltf-753f5bed79c037fae763e94fdd1afece.scn" ]
 
 [params]
 
