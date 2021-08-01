@@ -12,9 +12,9 @@ var tempo = 120.0
 var note_scale = []
 
 var melody_note_seq = []
-var melody_rhythm_seq = []
+var melody_play_seq = []
 var bass_note_seq = []
-var bass_rhythm_seq = []
+var bass_play_seq = []
 var snare_seq = []
 var hihat_seq = []
 
@@ -61,24 +61,24 @@ func _sequence():
 		var note_id = globals.dream_rng.randi()%7
 		melody_note_seq.append(note_scale[note_id])
 	for melody_plays in 16:
-		var melody_rhythm_chance = globals.dream_rng.randf()
-		melody_rhythm_seq.append(melody_rhythm_chance)
+		var melody_play_chance = globals.dream_rng.randf()
+		melody_play_seq.append(melody_play_chance > 0.5)
 	for bass_notes in 16:
 		var note_id = globals.dream_rng.randi()%7
 		bass_note_seq.append(note_scale[note_id])
 	for bass_plays in 16:
-		var bass_rhythm_chance = globals.dream_rng.randf()
-		bass_rhythm_seq.append(bass_rhythm_chance)
+		var bass_play_chance = globals.dream_rng.randf()
+		bass_play_seq.append(bass_play_chance > 0.5)
 	#drums
 	for snare_plays in 16:
 		if snare_plays%2:
 			var snare_chance = globals.dream_rng.randf()
-			snare_seq.append(snare_chance)
+			snare_seq.append(snare_chance > 0.5)
 		else:
 			snare_seq.append(0.0)
 	for hihat_plays in 16:
 		var hihat_chance = globals.dream_rng.randf()
-		hihat_seq.append(hihat_chance)
+		hihat_seq.append(hihat_chance > 0.5)
 
 func _note_to_pitch(note_value):
 	return pow(2.0, note_value/12.0)
@@ -86,17 +86,17 @@ func _note_to_pitch(note_value):
 func _timeout():
 	#melody and bass
 	melody.pitch_scale = _note_to_pitch(melody_note_seq[current_note])
-	if melody_rhythm_seq[current_note] > 0.5:
+	if melody_play_seq[current_note]:
 		melody.play()
 	bass.pitch_scale = _note_to_pitch(bass_note_seq[current_note] - 12.0)
-	if bass_rhythm_seq[current_note] > 0.5:
+	if bass_play_seq[current_note]:
 		bass.play()
 	#drums
 	if current_note%4 == 1:
 		kick.play()
-	if snare_seq[current_note] > 0.5:
+	if snare_seq[current_note]:
 		snare.play()
-	if hihat_seq[current_note] > 0.5:
+	if hihat_seq[current_note]:
 		hihat.play()
 	#loop
 	if current_note < 15:
