@@ -9,7 +9,6 @@ export var mouse_sensitivity = 0.002
 export var acceleration = 4.0
 export var friction = 6.0
 export var fall_limit = -1000.0
-export var bounds = 50.0
 
 var pivot
 
@@ -56,8 +55,6 @@ func _physics_process(delta):
 	if playable:
 		velocity = move_and_slide(velocity, Vector3.UP, true)
 	if translation.y < fall_limit:
-		_restart()
-	if abs(translation.x) > bounds or abs(translation.z) > bounds:
 		_restart()
 
 func _restart():
