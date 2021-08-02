@@ -51,9 +51,9 @@ preload("res://bgm_gen/drums_hihat/hihat4.wav"),
 preload("res://bgm_gen/drums_hihat/hihat5.wav"),
 preload("res://bgm_gen/drums_hihat/hihat6.wav")]
 
-const normalmaps = []
+const normalmaps = [preload("res://dream_gen/textures/normal/water.png")]
 
-const layouts = [preload("res://dream_gen/layouts/layout1.tscn")]
+const layouts = [preload("res://dream_gen/layouts/bridge_stone.tscn")]
 
 var dream_rng
 

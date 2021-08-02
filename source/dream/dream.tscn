@@ -13,3 +13,7 @@ script = ExtResource( 3 )
 [node name="player" parent="." instance=ExtResource( 2 )]
 
 [node name="dream_gen" parent="." instance=ExtResource( 4 )]
+
+[node name="sun" type="DirectionalLight" parent="."]
+transform = Transform( 0.5, -0.612372, 0.612372, 0, 0.707107, 0.707107, -0.866025, -0.353553, 0.353553, 0, 0, 0 )
+shadow_enabled = true
