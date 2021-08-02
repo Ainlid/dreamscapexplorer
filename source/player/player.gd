@@ -9,7 +9,7 @@ export var mouse_sensitivity = 0.002
 export var acceleration = 4.0
 export var friction = 6.0
 export var fall_limit = -1000.0
-var dead = false
+export var bounds = 50.0
 
 var pivot
 
@@ -32,7 +32,6 @@ func _physics_process(delta):
 	if Input.is_action_pressed("move_right"):
 		dir += basis.x
 	dir = dir.normalized()
-
 	var speed = walk_speed
 	if is_on_floor():
 		#this prevents you from sliding without messing up the is_on_ground() check
@@ -43,10 +42,8 @@ func _physics_process(delta):
 			velocity.y = jump_speed
 	else:
 		velocity.y += gravity * delta
-
 	var hvel = velocity
 	hvel.y = 0.0
-
 	var target = dir * speed
 	var accel
 	if dir.dot(hvel) > 0.0:
@@ -58,13 +55,13 @@ func _physics_process(delta):
 	velocity.z = hvel.z
 	if playable:
 		velocity = move_and_slide(velocity, Vector3.UP, true)
-
 	if translation.y < fall_limit:
-		_die()
+		_restart()
+	if abs(translation.x) > bounds or abs(translation.z) > bounds:
+		_restart()
 
-func _die():
-	if !dead:
-		dead = true
+func _restart():
+	if playable:
 		playable = false
 		fader._reload_scene()
 

@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/test.gltf-753f5bed79c037fae763e94fdd1afece.scn"
+path="res://.import/layout1.gltf-73e8e78dbc6b4dfa3c22c0bbf180a20f.scn"
 
 [deps]
 
-source_file="res://dream_gen/models/test.gltf"
-dest_files=[ "res://.import/test.gltf-753f5bed79c037fae763e94fdd1afece.scn" ]
+source_file="res://dream_gen/layouts/layout1.gltf"
+dest_files=[ "res://.import/layout1.gltf-73e8e78dbc6b4dfa3c22c0bbf180a20f.scn" ]
 
 [params]
 
@@ -19,7 +19,7 @@ nodes/storage=0
 nodes/use_legacy_names=false
 materials/location=1
 materials/storage=0
-materials/keep_on_reimport=false
+materials/keep_on_reimport=true
 meshes/compress=true
 meshes/ensure_tangents=true
 meshes/storage=0
