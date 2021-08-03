@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/water.png-ee8dbac74d0c243c4cd64e2aa40de241.stex"
+path="res://.import/brick_stone.png-59fdc848ed412c617e84edd0d210d6bb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dream_gen/textures/albedo/water.png"
-dest_files=[ "res://.import/water.png-ee8dbac74d0c243c4cd64e2aa40de241.stex" ]
+source_file="res://dream_gen/textures/albedo/brick_stone.png"
+dest_files=[ "res://.import/brick_stone.png-59fdc848ed412c617e84edd0d210d6bb.stex" ]
 
 [params]
 

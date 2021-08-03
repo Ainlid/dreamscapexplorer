@@ -3,9 +3,3 @@ importing meshes:
 2. select built-in materials in Godot import settings
 3. reimport and delete material files
 4. generate collisions
-
-normal maps:
-1. desaturate
-2. 2px gaussian blur
-3. height to normal
-make sure repeat mode is set to true

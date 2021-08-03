@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/water.png-ee8dbac74d0c243c4cd64e2aa40de241.stex"
+path="res://.import/sand.png-619fcfc268ae509341515f2f51fc2133.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dream_gen/textures/albedo/water.png"
-dest_files=[ "res://.import/water.png-ee8dbac74d0c243c4cd64e2aa40de241.stex" ]
+source_file="res://dream_gen/textures/albedo/sand.png"
+dest_files=[ "res://.import/sand.png-619fcfc268ae509341515f2f51fc2133.stex" ]
 
 [params]
 

@@ -38,7 +38,6 @@ func _fade_out():
 
 func _reload_scene():
 	path = get_tree().get_current_scene().get_filename()
-	print(path)
 	_fade_out()
 	timer.start()
 
