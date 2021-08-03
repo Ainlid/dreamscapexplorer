@@ -1,6 +1,8 @@
 extends CanvasLayer
 
 var path = "test"
+const menu_path = "res://interface/main_menu/main_menu.tscn"
+const dream_path = "res://dream/dream.tscn"
 
 var duration = 0.5
 var rect
@@ -14,7 +16,7 @@ func _ready():
 	timer.wait_time = duration
 
 func _fade_start(var scene_path):
-	path = "res://scenes/" + scene_path + ".tscn"
+	path = scene_path
 	var file = File.new()
 	if file.file_exists(path):
 		_fade_out()
@@ -36,6 +38,7 @@ func _fade_out():
 
 func _reload_scene():
 	path = get_tree().get_current_scene().get_filename()
+	print(path)
 	_fade_out()
 	timer.start()
 

@@ -5,7 +5,7 @@ func _unhandled_input(event):
 		var image = get_viewport().get_texture().get_data()
 		image.flip_y()
 		var date = OS.get_datetime()
-		var url = OS.get_executable_path().get_base_dir() + "/ittenn_"
+		var url = OS.get_executable_path().get_base_dir() + "/dse_"
 		url += str(date.day) + "_"
 		url += str(date.month) + "_"
 		url += str(date.year) + "_at_"

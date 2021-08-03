@@ -30,4 +30,4 @@ func _reload():
 func _main_menu():
 	_unpause_game()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
-	fader._fade_start("main_menu")
+	fader._fade_start(fader.menu_path)
