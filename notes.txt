@@ -2,11 +2,7 @@ importing meshes:
 1. export .gltf
 2. select built-in materials in Godot import settings
 3. reimport and delete material files
-
-collisions:
-1. model collisions as separate object
-2. generate trimesh static body from the collision object
-3. hide the collision object
+4. generate collisions
 
 normal maps:
 1. desaturate

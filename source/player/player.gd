@@ -38,8 +38,9 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("jump"):
 			velocity.y = jump_speed
 	var target_vel = dir * speed
-	velocity.x = target_vel.x
-	velocity.z = target_vel.z
+	if !is_on_wall():
+		velocity.x = target_vel.x
+		velocity.z = target_vel.z
 	velocity.y += gravity * delta
 	if playable:
 		velocity = move_and_slide(velocity, Vector3.UP, true)

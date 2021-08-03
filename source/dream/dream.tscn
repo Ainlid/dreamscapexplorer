@@ -8,6 +8,8 @@
 [node name="dream" type="Spatial"]
 script = ExtResource( 3 )
 
+[node name="env" type="WorldEnvironment" parent="."]
+
 [node name="bgm_gen" parent="." instance=ExtResource( 1 )]
 
 [node name="player" parent="." instance=ExtResource( 2 )]
