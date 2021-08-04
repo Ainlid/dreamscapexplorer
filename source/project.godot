@@ -25,6 +25,7 @@ globals="*res://globals/globals.tscn"
 fader="*res://interface/fader/fader.tscn"
 fullscreen="*res://interface/fullscreen/fullscreen.tscn"
 screencap="*res://interface/screencap/screencap.tscn"
+save_manager="*res://save_manager/save_manager.tscn"
 
 [display]
 

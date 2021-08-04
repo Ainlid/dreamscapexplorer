@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://interface/fonts/font_regular.tres" type="DynamicFont" id=1]
+[ext_resource path="res://interface/settings/settings.gd" type="Script" id=2]
+
+[node name="settings" type="Button"]
+margin_right = 208.0
+margin_bottom = 52.0
+custom_fonts/font = ExtResource( 1 )
+text = "settings"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="popup" type="ConfirmationDialog" parent="."]
+visible = true
+margin_left = 595.449
+margin_top = 344.728
+margin_right = 1407.45
+margin_bottom = 706.728
+window_title = "settings"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="volume_label" type="Label" parent="popup"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 182.0
+margin_bottom = 59.0
+custom_fonts/font = ExtResource( 1 )
+text = "volume:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="volume_slider" type="HSlider" parent="popup"]
+margin_left = 182.0
+margin_top = 8.0
+margin_right = 794.0
+margin_bottom = 59.0
+min_value = -16.0
+max_value = 0.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="confirmed" from="popup" to="." method="_confirmed"]
+[connection signal="value_changed" from="popup/volume_slider" to="." method="_volume_changed"]

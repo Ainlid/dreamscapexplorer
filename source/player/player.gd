@@ -50,6 +50,7 @@ func _physics_process(delta):
 func _restart():
 	if playable:
 		playable = false
+		globals._dream_rng_refresh()
 		fader._reload_scene()
 
 func _unhandled_input(event):

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/harmonica.wav-e2e41091e6d73602ae9f7a47a80951ad.sample"
+path="res://.import/pizzicato.wav-f745de648ccc37f3199667ff4d0cbe87.sample"
 
 [deps]
 
-source_file="res://bgm_gen/samples/harmonica.wav"
-dest_files=[ "res://.import/harmonica.wav-e2e41091e6d73602ae9f7a47a80951ad.sample" ]
+source_file="res://bgm_gen/samples/pizzicato.wav"
+dest_files=[ "res://.import/pizzicato.wav-f745de648ccc37f3199667ff4d0cbe87.sample" ]
 
 [params]
 

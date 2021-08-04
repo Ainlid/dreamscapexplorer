@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/santur.wav-e6a68059a76e95503a2489a38e122812.sample"
+path="res://.import/tremolo_str.wav-836f69352ab925fed21ba571a35881ae.sample"
 
 [deps]
 
-source_file="res://bgm_gen/samples/santur.wav"
-dest_files=[ "res://.import/santur.wav-e6a68059a76e95503a2489a38e122812.sample" ]
+source_file="res://bgm_gen/samples/tremolo_str.wav"
+dest_files=[ "res://.import/tremolo_str.wav-836f69352ab925fed21ba571a35881ae.sample" ]
 
 [params]
 
