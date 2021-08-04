@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/fingered_bs.wav-9bec081d619a13839209654cb5455f85.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/fingered_bs.wav"
+dest_files=[ "res://.import/fingered_bs.wav-9bec081d619a13839209654cb5455f85.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

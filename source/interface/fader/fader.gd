@@ -25,6 +25,7 @@ func _fade_start(var scene_path):
 		_reload_scene()
 
 func _fade_in():
+	get_tree().paused = false
 	tween.interpolate_property(rect, "color",
 	rect.color, Color(0.0, 0.0, 0.0, 0.0), duration,
 	Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)

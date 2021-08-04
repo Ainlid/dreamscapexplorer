@@ -28,6 +28,5 @@ func _reload():
 	fader._reload_scene()
 
 func _main_menu():
-	_unpause_game()
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	fader._fade_start(fader.menu_path)

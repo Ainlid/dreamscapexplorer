@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/church_organ1.wav-564482ee80e98a6e0ac9dac869abdf20.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/church_organ1.wav"
+dest_files=[ "res://.import/church_organ1.wav-564482ee80e98a6e0ac9dac869abdf20.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

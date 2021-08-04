@@ -32,10 +32,12 @@ func _bgm_start():
 	timer.start()
 
 func _set_samples():
-	var sample_id = globals.dream_rng.randi()%globals.samples.size()
-	var sample = globals.samples[sample_id]
-	melody.stream = sample
-	bass.stream = sample
+	var melody_sample_id = globals.dream_rng.randi()%globals.samples.size()
+	var melody_sample = globals.samples[melody_sample_id]
+	melody.stream = melody_sample
+	var bass_sample_id = globals.dream_rng.randi()%globals.samples.size()
+	var bass_sample = globals.samples[bass_sample_id]
+	bass.stream = bass_sample
 
 func _make_scale():
 	var scale_chance = globals.dream_rng.randf()

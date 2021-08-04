@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/distortion_gt.wav-dd77604ea31f86f282dd0ec0d6a30745.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/distortion_gt.wav"
+dest_files=[ "res://.import/distortion_gt.wav-dd77604ea31f86f282dd0ec0d6a30745.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

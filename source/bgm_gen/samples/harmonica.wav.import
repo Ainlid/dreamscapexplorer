@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/harmonica.wav-e2e41091e6d73602ae9f7a47a80951ad.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/harmonica.wav"
+dest_files=[ "res://.import/harmonica.wav-e2e41091e6d73602ae9f7a47a80951ad.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -53,9 +53,9 @@ __meta__ = {
 
 [node name="button_main_menu" type="Button" parent="menu"]
 margin_left = 768.013
-margin_top = 572.108
+margin_top = 660.108
 margin_right = 1115.02
-margin_bottom = 628.108
+margin_bottom = 716.108
 mouse_default_cursor_shape = 2
 custom_fonts/font = ExtResource( 5 )
 text = "main menu"
@@ -64,10 +64,10 @@ __meta__ = {
 }
 
 [node name="controls" parent="menu" instance=ExtResource( 4 )]
-margin_left = 45.1899
-margin_top = 54.7036
-margin_right = 565.19
-margin_bottom = 516.704
+margin_left = 768.0
+margin_top = 553.0
+margin_right = 1115.0
+margin_bottom = 619.0
 
 [connection signal="pressed" from="menu/button_resume" to="." method="_unpause_game"]
 [connection signal="pressed" from="menu/button_main_menu" to="." method="_main_menu"]

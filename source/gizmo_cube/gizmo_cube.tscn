@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://gizmo_cube/gizmo_cube.gd" type="Script" id=1]
+[ext_resource path="res://gizmo_cube/gizmo_mat.tres" type="Material" id=2]
+
+[sub_resource type="CubeMesh" id=1]
+
+[node name="gizmo_cube" type="MeshInstance"]
+mesh = SubResource( 1 )
+material/0 = ExtResource( 2 )
+script = ExtResource( 1 )
