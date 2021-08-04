@@ -6,7 +6,6 @@
 [node name="controls" type="Button"]
 margin_right = 306.0
 margin_bottom = 66.0
-focus_mode = 0
 custom_fonts/font = ExtResource( 1 )
 text = "controls"
 script = ExtResource( 3 )

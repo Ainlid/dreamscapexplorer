@@ -1,8 +1,8 @@
 extends Node
 
-const settings_save_path = "user://dse_settings.dat"
+const save_path = "user://dreamscape_explorer_save.dat"
 
-var settings_data = {
+var save_data = {
 	"volume" : -2.0
 }
 
@@ -11,15 +11,15 @@ func _ready():
 
 func _save_data():
 	var file = File.new()
-	var settings_error = file.open(settings_save_path, File.WRITE)
-	if settings_error == OK:
-		file.store_var(settings_data)
+	var error = file.open(save_path, File.WRITE)
+	if error == OK:
+		file.store_var(save_data)
 		file.close()
 
 func _load_data():
 	var file = File.new()
-	if file.file_exists(settings_save_path):
-		var settings_error = file.open(settings_save_path, File.READ)
-		if settings_error == OK:
-			settings_data = file.get_var()
+	if file.file_exists(save_path):
+		var error = file.open(save_path, File.READ)
+		if error == OK:
+			save_data = file.get_var()
 			file.close()

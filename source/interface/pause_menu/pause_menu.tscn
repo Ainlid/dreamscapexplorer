@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://interface/pause_menu/pause_menu.gd" type="Script" id=1]
 [ext_resource path="res://interface/styles/label.tres" type="StyleBox" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://interface/controls/controls.tscn" type="PackedScene" id=4]
 [ext_resource path="res://interface/fonts/font_regular.tres" type="DynamicFont" id=5]
 [ext_resource path="res://interface/settings/settings.tscn" type="PackedScene" id=6]
+[ext_resource path="res://interface/dream_saver/dream_saver.tscn" type="PackedScene" id=7]
 
 [node name="pause_menu" type="CanvasLayer"]
 pause_mode = 2
@@ -28,10 +29,10 @@ __meta__ = {
 }
 
 [node name="label" type="Label" parent="menu"]
-margin_left = 768.013
-margin_top = 345.904
-margin_right = 1115.01
-margin_bottom = 401.904
+margin_left = 736.0
+margin_top = 362.0
+margin_right = 1151.0
+margin_bottom = 418.0
 custom_styles/normal = ExtResource( 2 )
 custom_fonts/font = ExtResource( 3 )
 text = "paused"
@@ -75,6 +76,12 @@ text = "main menu"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="dream_saver" parent="menu" instance=ExtResource( 7 )]
+margin_left = 1190.0
+margin_top = 360.0
+margin_right = 1698.0
+margin_bottom = 674.0
 
 [connection signal="pressed" from="menu/button_resume" to="." method="_unpause_game"]
 [connection signal="pressed" from="menu/button_main_menu" to="." method="_main_menu"]

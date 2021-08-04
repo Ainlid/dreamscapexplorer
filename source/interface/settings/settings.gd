@@ -6,7 +6,7 @@ onready var vol_slider = $popup/volume_slider
 var vol_value = -2.0
 
 func _ready():
-	vol_value = save_manager.settings_data["volume"]
+	vol_value = save_manager.save_data["volume"]
 	_set_volume()
 
 func _pressed():

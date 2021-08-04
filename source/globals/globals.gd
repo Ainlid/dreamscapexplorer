@@ -23,7 +23,8 @@ preload("res://bgm_gen/samples/fretless_bs.wav"),
 preload("res://bgm_gen/samples/slap_bs1.wav"),
 preload("res://bgm_gen/samples/synth_bs1.wav"),
 preload("res://bgm_gen/samples/tremolo_str.wav"),
-preload("res://bgm_gen/samples/pizzicato.wav")]
+preload("res://bgm_gen/samples/pizzicato.wav"),
+preload("res://bgm_gen/samples/harp.wav")]
 
 const layouts = [preload("res://dream_gen/layouts/bridge_stone.tscn")]
 

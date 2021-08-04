@@ -1,0 +1,77 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://interface/styles/label.tres" type="StyleBox" id=1]
+[ext_resource path="res://interface/fonts/font_regular.tres" type="DynamicFont" id=2]
+[ext_resource path="res://interface/dream_saver/dream_saver.gd" type="Script" id=3]
+
+[node name="dream_saver" type="Control"]
+margin_right = 508.0
+margin_bottom = 314.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="panel" type="Panel" parent="."]
+margin_right = 508.0
+margin_bottom = 310.0
+custom_styles/panel = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_desc" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+custom_fonts/font = ExtResource( 2 )
+text = "current dream address:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label_address" type="Label" parent="."]
+margin_top = 66.0
+margin_right = 508.0
+margin_bottom = 112.0
+custom_fonts/font = ExtResource( 2 )
+text = "null"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_copy" type="Button" parent="."]
+margin_left = 22.0
+margin_top = 134.0
+margin_right = 480.0
+margin_bottom = 192.0
+custom_fonts/font = ExtResource( 2 )
+text = "copy to clipboard"
+
+[node name="button_save" type="Button" parent="."]
+margin_left = 22.0
+margin_top = 222.0
+margin_right = 480.0
+margin_bottom = 280.0
+custom_fonts/font = ExtResource( 2 )
+text = "save as file"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="save_dialog" type="FileDialog" parent="."]
+margin_left = 724.0
+margin_top = 378.0
+margin_right = 1190.0
+margin_bottom = 774.0
+window_title = "save a dream"
+access = 2
+filters = PoolStringArray( "*.txt" )
+current_dir = "/Daniil/dream_diary/source"
+current_path = "/Daniil/dream_diary/source/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="button_copy" to="." method="_pressed_copy"]
+[connection signal="pressed" from="button_save" to="." method="_pressed_save"]
+[connection signal="file_selected" from="save_dialog" to="." method="_save_confirmed"]
