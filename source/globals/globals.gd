@@ -18,6 +18,13 @@ preload("res://bgm_gen/samples/dulcimer.wav")]
 
 const layouts = [preload("res://dream_gen/layouts/bridge_stone.tscn")]
 
+const tiles = [preload("res://dream_gen/tiles/tile_test.tscn")]
+
+var tilemats = [preload("res://dream_gen/materials/tilemat1.tres"),
+preload("res://dream_gen/materials/tilemat2.tres"),
+preload("res://dream_gen/materials/tilemat3.tres"),
+preload("res://dream_gen/materials/tilemat4.tres")]
+
 const albedo_textures = [preload("res://dream_gen/textures/albedo/water.png"),
 preload("res://dream_gen/textures/albedo/sand.png"),
 preload("res://dream_gen/textures/albedo/stone.png"),
