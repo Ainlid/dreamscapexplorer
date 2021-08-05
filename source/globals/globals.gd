@@ -1,8 +1,10 @@
 extends Node
 
-const samples = [preload("res://bgm_gen/samples/piano1.wav"),
+const samples = [preload("res://bgm_gen/samples/piano.wav"),
+preload("res://bgm_gen/samples/piano_electro.wav"),
 preload("res://bgm_gen/samples/honky_tonk.wav"),
-preload("res://bgm_gen/samples/e_piano1.wav"),
+preload("res://bgm_gen/samples/piano_electric.wav"),
+preload("res://bgm_gen/samples/piano_electric2.wav"),
 preload("res://bgm_gen/samples/harpsichord.wav"),
 preload("res://bgm_gen/samples/clav.wav"),
 preload("res://bgm_gen/samples/celesta.wav"),
@@ -11,20 +13,8 @@ preload("res://bgm_gen/samples/music_box.wav"),
 preload("res://bgm_gen/samples/vibraphone.wav"),
 preload("res://bgm_gen/samples/marimba.wav"),
 preload("res://bgm_gen/samples/xylophone.wav"),
-preload("res://bgm_gen/samples/organ1.wav"),
-preload("res://bgm_gen/samples/nylon_str_gt.wav"),
-preload("res://bgm_gen/samples/steel_str_gt.wav"),
-preload("res://bgm_gen/samples/jazz_gt.wav"),
-preload("res://bgm_gen/samples/clean_gt.wav"),
-preload("res://bgm_gen/samples/muted_gt.wav"),
-preload("res://bgm_gen/samples/acoustic_bs.wav"),
-preload("res://bgm_gen/samples/fingered_bs.wav"),
-preload("res://bgm_gen/samples/fretless_bs.wav"),
-preload("res://bgm_gen/samples/slap_bs1.wav"),
-preload("res://bgm_gen/samples/synth_bs1.wav"),
-preload("res://bgm_gen/samples/tremolo_str.wav"),
-preload("res://bgm_gen/samples/pizzicato.wav"),
-preload("res://bgm_gen/samples/harp.wav")]
+preload("res://bgm_gen/samples/tubular_bells.wav"),
+preload("res://bgm_gen/samples/dulcimer.wav")]
 
 const layouts = [preload("res://dream_gen/layouts/bridge_stone.tscn")]
 

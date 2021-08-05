@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/clean_gt.wav-7dea6be04ae568bf157ad2dc1ef6eff5.sample"
+path="res://.import/piano.wav-c11c1ca78f1a5cbdb765a5d24551fba2.sample"
 
 [deps]
 
-source_file="res://bgm_gen/samples/clean_gt.wav"
-dest_files=[ "res://.import/clean_gt.wav-7dea6be04ae568bf157ad2dc1ef6eff5.sample" ]
+source_file="res://bgm_gen/samples/piano.wav"
+dest_files=[ "res://.import/piano.wav-c11c1ca78f1a5cbdb765a5d24551fba2.sample" ]
 
 [params]
 

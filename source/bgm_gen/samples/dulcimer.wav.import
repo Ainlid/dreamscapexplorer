@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/harp.wav-96969e8b9eee414037286961d3889de4.sample"
+path="res://.import/dulcimer.wav-bc390db030062949e336c82bf0043f55.sample"
 
 [deps]
 
-source_file="res://bgm_gen/samples/harp.wav"
-dest_files=[ "res://.import/harp.wav-96969e8b9eee414037286961d3889de4.sample" ]
+source_file="res://bgm_gen/samples/dulcimer.wav"
+dest_files=[ "res://.import/dulcimer.wav-bc390db030062949e336c82bf0043f55.sample" ]
 
 [params]
 
