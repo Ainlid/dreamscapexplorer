@@ -31,7 +31,6 @@ func _spawn_grid():
 	var y_levels = 1
 	if vertical_chance > 0.5:
 		y_levels = globals.dream_rng.randi_range(2, grid_size)
-	var player_cell_num = globals.dream_rng.randi_range(0, grid_size * grid_size)
 	for n_x in grid_size:
 		for n_y in y_levels:
 			for n_z in grid_size:
