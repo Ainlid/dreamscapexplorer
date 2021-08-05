@@ -36,7 +36,8 @@ func _spawn_grid():
 			for n_z in grid_size:
 				var spawn_chance = globals.dream_rng.randf()
 				if spawn_chance > 0.5:
-					var new_cell = globals.tiles[0].instance()
+					var tile_id = globals.dream_rng.randi()%globals.tiles.size()
+					var new_cell = globals.tiles[tile_id].instance()
 					grid.add_child(new_cell)
 					new_cell.translation.x = n_x * cell_distance
 					new_cell.translation.y = n_y * cell_distance / 2.0
