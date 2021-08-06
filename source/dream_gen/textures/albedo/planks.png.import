@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sand.png-619fcfc268ae509341515f2f51fc2133.stex"
+path="res://.import/planks.png-da5eaba6f7fc19b9f19ed24505abc170.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dream_gen/textures/albedo/sand.png"
-dest_files=[ "res://.import/sand.png-619fcfc268ae509341515f2f51fc2133.stex" ]
+source_file="res://dream_gen/textures/albedo/planks.png"
+dest_files=[ "res://.import/planks.png-da5eaba6f7fc19b9f19ed24505abc170.stex" ]
 
 [params]
 
@@ -21,7 +21,7 @@ compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=1
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=true

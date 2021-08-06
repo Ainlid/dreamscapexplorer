@@ -1,5 +1,3 @@
-importing meshes:
-1. export .gltf
-2. select built-in materials in Godot import settings
-3. reimport and delete material files
-4. generate collisions
+albedo textures:
+1. desaturate
+2. auto levels

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wood_planks.png-bbbdd4383271d37bd3167f804e0b62f5.stex"
+path="res://.import/brick.png-7caa54e6e652e82393f488fda7715e50.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dream_gen/textures/albedo/wood_planks.png"
-dest_files=[ "res://.import/wood_planks.png-bbbdd4383271d37bd3167f804e0b62f5.stex" ]
+source_file="res://dream_gen/textures/albedo/brick.png"
+dest_files=[ "res://.import/brick.png-7caa54e6e652e82393f488fda7715e50.stex" ]
 
 [params]
 
@@ -21,7 +21,7 @@ compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=1
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=true

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brick_stone.png-59fdc848ed412c617e84edd0d210d6bb.stex"
+path="res://.import/metal.png-1701fa643b312cf3702860f804783fae.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dream_gen/textures/albedo/brick_stone.png"
-dest_files=[ "res://.import/brick_stone.png-59fdc848ed412c617e84edd0d210d6bb.stex" ]
+source_file="res://dream_gen/textures/albedo/metal.png"
+dest_files=[ "res://.import/metal.png-1701fa643b312cf3702860f804783fae.stex" ]
 
 [params]
 
@@ -21,7 +21,7 @@ compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=1
 flags/filter=true
-flags/mipmaps=false
+flags/mipmaps=true
 flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=true

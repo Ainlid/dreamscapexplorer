@@ -16,8 +16,6 @@ preload("res://bgm_gen/samples/xylophone.wav"),
 preload("res://bgm_gen/samples/tubular_bells.wav"),
 preload("res://bgm_gen/samples/dulcimer.wav")]
 
-const layouts = [preload("res://dream_gen/layouts/bridge_stone.tscn")]
-
 const floors = [preload("res://dream_gen/tiles/floors/test_flat.tscn"),
 preload("res://dream_gen/tiles/floors/test_stairs.tscn")]
 
@@ -27,12 +25,12 @@ preload("res://dream_gen/materials/tilemat3.tres"),
 preload("res://dream_gen/materials/tilemat4.tres")]
 
 const albedo_textures = [preload("res://dream_gen/textures/albedo/water.png"),
-preload("res://dream_gen/textures/albedo/sand.png"),
 preload("res://dream_gen/textures/albedo/stone.png"),
-preload("res://dream_gen/textures/albedo/brick_stone.png"),
-preload("res://dream_gen/textures/albedo/wood_planks.png"),
 preload("res://dream_gen/textures/albedo/ice.png"),
-preload("res://dream_gen/textures/albedo/grass.png")]
+preload("res://dream_gen/textures/albedo/brick.png"),
+preload("res://dream_gen/textures/albedo/planks.png"),
+preload("res://dream_gen/textures/albedo/marble.png"),
+preload("res://dream_gen/textures/albedo/metal.png")]
 
 var dream_rng
 
