@@ -8,23 +8,17 @@ onready var sun = $sun
 
 var grid_size = 8
 var cell_distance = 40.0
-var cells_array = []
+var floors_array = []
 
 func _ready():
 	_generate()
 
 func _generate():
-	#_spawn_layout()
 	_spawn_grid()
 	_randomize_mats()
 	_set_env()
 	_set_sun()
 	_spawn_player()
-
-func _spawn_layout():
-	var layout_id = globals.dream_rng.randi()%globals.layouts.size()
-	var new_layout = globals.layouts[layout_id].instance()
-	add_child(new_layout)
 
 func _spawn_grid():
 	var vertical_chance = globals.dream_rng.randf()
@@ -36,23 +30,23 @@ func _spawn_grid():
 			for n_z in grid_size:
 				var spawn_chance = globals.dream_rng.randf()
 				if spawn_chance > 0.5:
-					var tile_id = globals.dream_rng.randi()%globals.tiles.size()
-					var new_cell = globals.tiles[tile_id].instance()
-					grid.add_child(new_cell)
-					new_cell.translation.x = n_x * cell_distance
-					new_cell.translation.y = n_y * cell_distance / 2.0
-					new_cell.translation.z = n_z * cell_distance
-					new_cell.rotation.y = globals.dream_rng.randi()%4 * PI/2.0
-					cells_array.append(new_cell)
+					var floor_id = globals.dream_rng.randi()%globals.floors.size()
+					var new_floor = globals.floors[floor_id].instance()
+					grid.add_child(new_floor)
+					new_floor.translation.x = n_x * cell_distance
+					new_floor.translation.y = n_y * cell_distance / 2.0
+					new_floor.translation.z = n_z * cell_distance
+					new_floor.rotation.y = globals.dream_rng.randi()%4 * PI/2.0
+					floors_array.append(new_floor)
 
 func _spawn_player():
-	var spawn_cell_id = globals.dream_rng.randi()%cells_array.size()
-	var spawn_cell = cells_array[spawn_cell_id]
+	var spawn_floor_id = globals.dream_rng.randi()%floors_array.size()
+	var spawn_floor = floors_array[spawn_floor_id]
 	var new_player = player.instance()
 	add_child(new_player)
-	new_player.translation.x = spawn_cell.translation.x
-	new_player.translation.y = spawn_cell.translation.y + 1.0
-	new_player.translation.z = spawn_cell.translation.z
+	new_player.translation.x = spawn_floor.translation.x
+	new_player.translation.y = spawn_floor.translation.y + 2.0
+	new_player.translation.z = spawn_floor.translation.z
 
 func _randomize_mats():
 	for n in globals.tilemats.size():
@@ -60,7 +54,6 @@ func _randomize_mats():
 		var current_mat = globals.tilemats[n]
 		current_mat.albedo_texture = globals.albedo_textures[tex_id]
 		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(10.0, 50.0)
-		
 
 func _set_env():
 	var env = world_env.environment

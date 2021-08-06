@@ -18,10 +18,11 @@ preload("res://bgm_gen/samples/dulcimer.wav")]
 
 const layouts = [preload("res://dream_gen/layouts/bridge_stone.tscn")]
 
-const tiles = [preload("res://dream_gen/tiles/tile_test.tscn")]
+const floors = [preload("res://dream_gen/tiles/floors/test_flat.tscn"),
+preload("res://dream_gen/tiles/floors/test_stairs.tscn")]
 
-var tilemats = [preload("res://dream_gen/materials/tilemat1.tres"),
-preload("res://dream_gen/materials/tilemat2.tres"),
+var tilemats = [preload("res://dream_gen/tiles/floors/floormat1.tres"),
+preload("res://dream_gen/tiles/floors/floormat2.tres"),
 preload("res://dream_gen/materials/tilemat3.tres"),
 preload("res://dream_gen/materials/tilemat4.tres")]
 
