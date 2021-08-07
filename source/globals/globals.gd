@@ -53,7 +53,11 @@ preload("res://dream_gen/textures/albedo/ice.png"),
 preload("res://dream_gen/textures/albedo/brick.png"),
 preload("res://dream_gen/textures/albedo/planks.png"),
 preload("res://dream_gen/textures/albedo/marble.png"),
-preload("res://dream_gen/textures/albedo/metal.png")]
+preload("res://dream_gen/textures/albedo/metal.png"),
+preload("res://dream_gen/textures/albedo/bark.png"),
+preload("res://dream_gen/textures/albedo/grass.png"),
+preload("res://dream_gen/textures/albedo/toy_bricks.png"),
+preload("res://dream_gen/textures/albedo/textbook.png")]
 
 var dream_rng
 

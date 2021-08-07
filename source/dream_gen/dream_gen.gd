@@ -72,8 +72,3 @@ func _set_env():
 func _set_sun():
 	sun.rotation.x = globals.dream_rng.randf_range(-PI / 2.0, PI / 2.0)
 	sun.rotation.y = globals.dream_rng.randf_range(0.0, PI * 2.0)
-	var sun_col = Color.white
-	sun_col.h = globals.dream_rng.randf()
-	sun_col.s = globals.dream_rng.randf_range(0.0, 0.5)
-	sun_col.v = globals.dream_rng.randf_range(0.5, 1.0)
-	#sun.light_color = sun_col
