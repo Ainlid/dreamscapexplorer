@@ -39,9 +39,6 @@ preload("res://bgm_gen/samples/sweep_pad.wav"),
 preload("res://bgm_gen/samples/koto.wav"),
 preload("res://bgm_gen/samples/kalimba.wav")]
 
-const floors = [preload("res://dream_gen/tiles/floors/test_flat.tscn"),
-preload("res://dream_gen/tiles/floors/test_stairs.tscn")]
-
 var tilemats = [preload("res://dream_gen/tiles/floors/floormat1.tres"),
 preload("res://dream_gen/tiles/floors/floormat2.tres"),
 preload("res://dream_gen/materials/tilemat3.tres"),

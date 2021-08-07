@@ -60,9 +60,9 @@ func _randomize_mats():
 		var tex_id = globals.dream_rng.randi()%globals.albedo_textures.size()
 		var current_mat = globals.tilemats[n]
 		current_mat.albedo_texture = globals.albedo_textures[tex_id]
-		current_mat.albedo_color.r = globals.dream_rng.randf()
-		current_mat.albedo_color.g = globals.dream_rng.randf()
-		current_mat.albedo_color.b = globals.dream_rng.randf()
+		current_mat.albedo_color.h = globals.dream_rng.randf()
+		current_mat.albedo_color.s = globals.dream_rng.randf()
+		current_mat.albedo_color.v = globals.dream_rng.randf_range(0.2, 1.0)
 		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(10.0, 20.0)
 
 func _set_env():
