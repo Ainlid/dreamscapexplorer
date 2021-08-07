@@ -10,6 +10,9 @@ var grid_size = 8
 var cell_distance = 40.0
 var floors_array = []
 
+onready var floor_flat = preload("res://dream_gen/tiles/floors/test_flat.tscn")
+onready var floor_stairs = preload("res://dream_gen/tiles/floors/test_stairs.tscn")
+
 func _ready():
 	_generate()
 
@@ -30,8 +33,12 @@ func _spawn_grid():
 			for n_z in grid_size:
 				var spawn_chance = globals.dream_rng.randf()
 				if spawn_chance > 0.5:
-					var floor_id = globals.dream_rng.randi()%globals.floors.size()
-					var new_floor = globals.floors[floor_id].instance()
+					var floor_type = globals.dream_rng.randf()
+					var new_floor
+					if floor_type > 0.5 and n_y > 0:
+						new_floor = floor_stairs.instance()
+					else:
+						new_floor = floor_flat.instance()
 					grid.add_child(new_floor)
 					new_floor.translation.x = n_x * cell_distance
 					new_floor.translation.y = n_y * cell_distance / 2.0
@@ -67,7 +74,7 @@ func _set_env():
 	env.background_color = fog_col
 	env.fog_color = fog_col
 	env.ambient_light_color = fog_col
-	env.ambient_light_energy = globals.dream_rng.randf_range(0.2, 0.5)
+	env.ambient_light_energy = globals.dream_rng.randf_range(0.5, 1.0)
 
 func _set_sun():
 	sun.rotation.x = globals.dream_rng.randf_range(-PI / 2.0, PI / 2.0)
