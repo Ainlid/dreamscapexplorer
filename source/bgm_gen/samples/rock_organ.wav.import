@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/rock_organ.wav-eb37a4d9afa72d6c2f33e384993ed98b.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/rock_organ.wav"
+dest_files=[ "res://.import/rock_organ.wav-eb37a4d9afa72d6c2f33e384993ed98b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

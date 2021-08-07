@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/kalimba.wav-313249a07482f1b8d0e07e3097366c83.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/kalimba.wav"
+dest_files=[ "res://.import/kalimba.wav-313249a07482f1b8d0e07e3097366c83.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

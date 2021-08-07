@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/sweep_pad.wav-c92efd1d98d040fbea3b587178383605.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/sweep_pad.wav"
+dest_files=[ "res://.import/sweep_pad.wav-c92efd1d98d040fbea3b587178383605.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

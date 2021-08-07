@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/clav.wav-005b42e6ab29f6504024099dfa89653b.sample"
+path="res://.import/harp.wav-96969e8b9eee414037286961d3889de4.sample"
 
 [deps]
 
-source_file="res://bgm_gen/samples/clav.wav"
-dest_files=[ "res://.import/clav.wav-005b42e6ab29f6504024099dfa89653b.sample" ]
+source_file="res://bgm_gen/samples/harp.wav"
+dest_files=[ "res://.import/harp.wav-96969e8b9eee414037286961d3889de4.sample" ]
 
 [params]
 

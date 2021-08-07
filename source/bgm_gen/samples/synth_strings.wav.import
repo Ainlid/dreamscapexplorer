@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/synth_strings.wav-721afc31627236b3f39365eea46c4605.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/synth_strings.wav"
+dest_files=[ "res://.import/synth_strings.wav-721afc31627236b3f39365eea46c4605.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

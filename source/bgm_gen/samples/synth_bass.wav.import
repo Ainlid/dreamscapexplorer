@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/synth_bass.wav-e548ede065260a1920c4a4dbde15810d.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/synth_bass.wav"
+dest_files=[ "res://.import/synth_bass.wav-e548ede065260a1920c4a4dbde15810d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

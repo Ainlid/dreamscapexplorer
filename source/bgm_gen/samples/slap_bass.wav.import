@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/slap_bass.wav-f49a20ddef8130cc661ed8c133a56e40.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/slap_bass.wav"
+dest_files=[ "res://.import/slap_bass.wav-f49a20ddef8130cc661ed8c133a56e40.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

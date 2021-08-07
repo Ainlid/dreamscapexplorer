@@ -56,7 +56,7 @@ func _randomize_mats():
 		current_mat.albedo_color.r = globals.dream_rng.randf()
 		current_mat.albedo_color.g = globals.dream_rng.randf()
 		current_mat.albedo_color.b = globals.dream_rng.randf()
-		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(0.1, 1.0)
+		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(10.0, 20.0)
 
 func _set_env():
 	var env = world_env.environment
@@ -70,10 +70,10 @@ func _set_env():
 	env.ambient_light_energy = globals.dream_rng.randf_range(0.2, 0.5)
 
 func _set_sun():
-	sun.rotation.x = globals.dream_rng.randf_range(0.0, PI * 2.0)
-	sun.rotation.y = globals.dream_rng.randf_range(0.0, PI)
+	sun.rotation.x = globals.dream_rng.randf_range(-PI / 2.0, PI / 2.0)
+	sun.rotation.y = globals.dream_rng.randf_range(0.0, PI * 2.0)
 	var sun_col = Color.white
 	sun_col.h = globals.dream_rng.randf()
-	sun_col.s = globals.dream_rng.randf()
+	sun_col.s = globals.dream_rng.randf_range(0.0, 0.5)
 	sun_col.v = globals.dream_rng.randf_range(0.5, 1.0)
-	sun.light_color = sun_col
+	#sun.light_color = sun_col
