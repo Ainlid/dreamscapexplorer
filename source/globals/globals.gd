@@ -39,9 +39,7 @@ preload("res://bgm_gen/samples/koto.wav"),
 preload("res://bgm_gen/samples/kalimba.wav")]
 
 var tilemats = [preload("res://dream_gen/tiles/floors/floormat1.tres"),
-preload("res://dream_gen/tiles/floors/floormat2.tres"),
-preload("res://dream_gen/materials/tilemat3.tres"),
-preload("res://dream_gen/materials/tilemat4.tres")]
+preload("res://dream_gen/tiles/floors/floormat2.tres")]
 
 const albedo_textures = [preload("res://dream_gen/textures/albedo/water.png"),
 preload("res://dream_gen/textures/albedo/stone.png"),

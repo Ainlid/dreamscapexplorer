@@ -24,18 +24,17 @@ func _generate():
 	_spawn_player()
 
 func _spawn_grid():
-	var vertical_chance = globals.dream_rng.randf()
 	var y_levels = 1
-	if vertical_chance > 0.5:
+	if globals.dream_rng.randf() > 0.5:
 		y_levels = globals.dream_rng.randi_range(2, grid_size)
+	var has_walls = globals.dream_rng.randf() > 0.5
 	for n_x in grid_size:
 		for n_y in y_levels:
 			for n_z in grid_size:
-				var spawn_chance = globals.dream_rng.randf()
-				if spawn_chance > 0.5:
-					var floor_type = globals.dream_rng.randf()
+				var spawn_chance = globals.dream_rng.randf() > 0.5
+				if spawn_chance:
 					var new_floor
-					if floor_type > 0.5 and n_y > 0:
+					if globals.dream_rng.randf() > 0.5 and n_y > 0:
 						new_floor = floor_stairs.instance()
 					else:
 						new_floor = floor_flat.instance()

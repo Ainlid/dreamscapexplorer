@@ -42,8 +42,7 @@ func _set_samples():
 	bass.stream = bass_sample
 
 func _make_scale():
-	var scale_chance = globals.dream_rng.randf()
-	if scale_chance > 0.5:
+	if globals.dream_rng.randf() > 0.5:
 		#major scale
 		note_scale = [0, 2, 4, 5, 7, 9, 11]
 	else:
