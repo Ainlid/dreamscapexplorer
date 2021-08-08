@@ -63,11 +63,11 @@ func _sequence():
 		bass_play_seq.append(bass_play_chance > 0.5)
 	#drums
 	for snare_plays in 16:
-		if snare_plays%2:
+		if snare_plays%2 == 1:
 			var snare_chance = globals.dream_rng.randf()
 			snare_seq.append(snare_chance > 0.5)
 		else:
-			snare_seq.append(0.0)
+			snare_seq.append(false)
 	for hihat_plays in 16:
 		var hihat_chance = globals.dream_rng.randf()
 		hihat_seq.append(hihat_chance > 0.5)
