@@ -1,3 +1,3 @@
 albedo textures:
 1. desaturate
-2. auto levels
+2. tweak levels to make a mostly white texture

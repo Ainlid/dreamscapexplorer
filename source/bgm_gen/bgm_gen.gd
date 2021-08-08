@@ -49,7 +49,7 @@ func _make_scale():
 	else:
 		#minor scale
 		note_scale = [0, 2, 3, 5, 7, 8, 10]
-	transposition = globals.dream_rng.randi_range(0, 12)
+	transposition = globals.dream_rng.randi_range(0, 11)
 
 func _sequence():
 	for melody_notes in 16:
