@@ -10,11 +10,13 @@ onready var timer =$timer
 var tempo = 120.0
 
 var note_scale = []
+var transposition = 0.0
 
 var melody_note_seq = []
 var melody_play_seq = []
 var bass_note_seq = []
 var bass_play_seq = []
+var kick_seq = []
 var snare_seq = []
 var hihat_seq = []
 
@@ -47,6 +49,7 @@ func _make_scale():
 	else:
 		#minor scale
 		note_scale = [0, 2, 3, 5, 7, 8, 10]
+	transposition = globals.dream_rng.randi_range(0, 12)
 
 func _sequence():
 	for melody_notes in 16:
@@ -62,13 +65,13 @@ func _sequence():
 		var bass_play_chance = globals.dream_rng.randf()
 		bass_play_seq.append(bass_play_chance > 0.5)
 	#drums
-	for snare_plays in 16:
-		if snare_plays%2 == 1:
+	for n_snare in 16:
+		if n_snare%2 == 1:
 			var snare_chance = globals.dream_rng.randf()
 			snare_seq.append(snare_chance > 0.5)
 		else:
 			snare_seq.append(false)
-	for hihat_plays in 16:
+	for n_hihat in 16:
 		var hihat_chance = globals.dream_rng.randf()
 		hihat_seq.append(hihat_chance > 0.5)
 
@@ -77,10 +80,10 @@ func _note_to_pitch(note_value):
 
 func _timeout():
 	#melody and bass
-	melody.pitch_scale = _note_to_pitch(melody_note_seq[current_note])
+	melody.pitch_scale = _note_to_pitch(melody_note_seq[current_note] + transposition)
 	if melody_play_seq[current_note]:
 		melody.play()
-	bass.pitch_scale = _note_to_pitch(bass_note_seq[current_note] - 12.0)
+	bass.pitch_scale = _note_to_pitch(bass_note_seq[current_note] + transposition - 12.0)
 	if bass_play_seq[current_note]:
 		bass.play()
 	#drums
