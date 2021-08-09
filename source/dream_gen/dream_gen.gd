@@ -13,6 +13,8 @@ var floors_array = []
 onready var floor_flat = preload("res://dream_gen/tiles/floors/test_flat.tscn")
 onready var floor_stairs = preload("res://dream_gen/tiles/floors/test_stairs.tscn")
 
+onready var wall = preload("res://dream_gen/tiles/walls/test_wall.tscn")
+
 func _ready():
 	_generate()
 
@@ -31,6 +33,10 @@ func _spawn_grid():
 	for n_x in grid_size:
 		for n_y in y_levels:
 			for n_z in grid_size:
+				var coords = Vector3()
+				coords.x = n_x * cell_distance
+				coords.y = n_y * cell_distance / 2.0
+				coords.z = n_z * cell_distance
 				var spawn_chance = globals.dream_rng.randf() > 0.5
 				if spawn_chance:
 					var new_floor
@@ -39,11 +45,14 @@ func _spawn_grid():
 					else:
 						new_floor = floor_flat.instance()
 					grid.add_child(new_floor)
-					new_floor.translation.x = n_x * cell_distance
-					new_floor.translation.y = n_y * cell_distance / 2.0
-					new_floor.translation.z = n_z * cell_distance
+					new_floor.translation = coords
 					new_floor.rotation.y = globals.dream_rng.randi()%4 * PI/2.0
 					floors_array.append(new_floor)
+				else:
+					if has_walls:
+						var new_wall = wall.instance()
+						add_child(new_wall)
+						new_wall.translation = coords
 
 func _spawn_player():
 	var spawn_floor_id = globals.dream_rng.randi()%floors_array.size()
