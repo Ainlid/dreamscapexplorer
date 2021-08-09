@@ -27,6 +27,9 @@ func _generate():
 	_spawn_player()
 
 func _spawn_grid():
+	var offset_h = -(grid_size - 1.0) / 2.0 * cell_distance
+	grid.translation.x = offset_h
+	grid.translation.z = offset_h
 	var y_levels = 1
 	if globals.dream_rng.randf() > 0.5:
 		y_levels = globals.dream_rng.randi_range(2, grid_size)
@@ -55,17 +58,16 @@ func _spawn_grid():
 						new_wall = wall_indoor.instance()
 					else:
 						new_wall = wall_outdoor.instance()
-					add_child(new_wall)
+					grid.add_child(new_wall)
 					new_wall.translation = coords
 
 func _spawn_player():
 	var spawn_floor_id = globals.dream_rng.randi()%floors_array.size()
 	var spawn_floor = floors_array[spawn_floor_id]
 	var new_player = player.instance()
-	add_child(new_player)
-	new_player.translation.x = spawn_floor.translation.x
-	new_player.translation.y = spawn_floor.translation.y + 2.0
-	new_player.translation.z = spawn_floor.translation.z
+	grid.add_child(new_player)
+	new_player.translation = spawn_floor.translation + Vector3.UP * 2.0
+	new_player.bound = grid_size / 2.0 * cell_distance
 
 func _randomize_mats():
 	for n in globals.tilemats.size():
