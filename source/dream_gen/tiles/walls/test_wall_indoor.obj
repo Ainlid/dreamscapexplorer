@@ -1,7 +1,7 @@
-# Blender v2.82 (sub 7) OBJ File: 'test_wall.blend'
+# Blender v2.82 (sub 7) OBJ File: 'test_wall_indoor.blend'
 # www.blender.org
-mtllib test_wall.mtl
-o test_wall
+mtllib test_wall_indoor.mtl
+o test_wall_indoor
 v 20.000000 19.000000 -20.000000
 v 20.000000 19.000000 20.000000
 v -20.000000 19.000000 -20.000000

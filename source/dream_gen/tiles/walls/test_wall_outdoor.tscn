@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://dream_gen/materials/tilemat1.tres" type="Material" id=1]
+[ext_resource path="res://dream_gen/materials/tilemat2.tres" type="Material" id=2]
+[ext_resource path="res://dream_gen/tiles/walls/test_wall_outdoor.obj" type="ArrayMesh" id=3]
+
+[sub_resource type="ConcavePolygonShape" id=1]
+data = PoolVector3Array( -2, 1, -2, 2, 1, -2, -2, 1, 2, -2, 1, 2, 2, 1, -2, 2, 1, 2, -2, 1, 2, 2, 1, 2, -2, 1, 20, -2, 1, 20, 2, 1, 2, 2, 1, 20, 2, -1, 2, -2, -1, 2, 2, -1, 20, 2, -1, 20, -2, -1, 2, -2, -1, 20, -2, 1, -2, -2, 1, 2, -20, 1, -2, -20, 1, -2, -2, 1, 2, -20, 1, 2, 2, 1, 2, 2, 1, -2, 20, 1, 2, 20, 1, 2, 2, 1, -2, 20, 1, -2, 2, -1, -2, -2, -1, -2, 2, -1, 2, 2, -1, 2, -2, -1, -2, -2, -1, 2, 2, 1, -2, -2, 1, -2, 2, 1, -20, 2, 1, -20, -2, 1, -2, -2, 1, -20, 2, -1, -2, 2, -1, 2, 20, -1, -2, 20, -1, -2, 2, -1, 2, 20, -1, 2, -2, -1, -2, 2, -1, -2, -2, -1, -20, -2, -1, -20, 2, -1, -2, 2, -1, -20, -2, -1, 2, -2, -1, -2, -20, -1, 2, -20, -1, 2, -2, -1, -2, -20, -1, -2, -2, -1, 2, -2, 1, 2, -2, -1, 20, -2, -1, 20, -2, 1, 2, -2, 1, 20, 2, 1, 20, 2, -1, 20, -2, 1, 20, -2, 1, 20, 2, -1, 20, -2, -1, 20, 2, 1, 2, 2, -1, 2, 2, 1, 20, 2, 1, 20, 2, -1, 2, 2, -1, 20, 20, 1, -2, 20, -1, -2, 20, 1, 2, 20, 1, 2, 20, -1, -2, 20, -1, 2, 2, 1, -2, 2, -1, -2, 20, 1, -2, 20, 1, -2, 2, -1, -2, 20, -1, -2, 2, -1, 2, 2, 1, 2, 20, -1, 2, 20, -1, 2, 2, 1, 2, 20, 1, 2, -2, 1, -20, -2, -1, -20, 2, 1, -20, 2, 1, -20, -2, -1, -20, 2, -1, -20, -2, 1, -2, -2, -1, -2, -2, 1, -20, -2, 1, -20, -2, -1, -2, -2, -1, -20, 2, -1, -2, 2, 1, -2, 2, -1, -20, 2, -1, -20, 2, 1, -2, 2, 1, -20, -20, 1, 2, -20, -1, 2, -20, 1, -2, -20, 1, -2, -20, -1, 2, -20, -1, -2, -2, -1, -2, -2, 1, -2, -20, -1, -2, -20, -1, -2, -2, 1, -2, -20, 1, -2, -2, 1, 2, -2, -1, 2, -20, 1, 2, -20, 1, 2, -2, -1, 2, -20, -1, 2 )
+
+[node name="test_wall_outdoor" type="Spatial"]
+
+[node name="test_wall_outdoor" type="MeshInstance" parent="."]
+mesh = ExtResource( 3 )
+material/0 = ExtResource( 1 )
+material/1 = ExtResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="test_wall_outdoor"]
+
+[node name="CollisionShape" type="CollisionShape" parent="test_wall_outdoor/StaticBody"]
+shape = SubResource( 1 )

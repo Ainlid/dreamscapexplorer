@@ -13,7 +13,8 @@ var floors_array = []
 onready var floor_flat = preload("res://dream_gen/tiles/floors/test_flat.tscn")
 onready var floor_stairs = preload("res://dream_gen/tiles/floors/test_stairs.tscn")
 
-onready var wall = preload("res://dream_gen/tiles/walls/test_wall.tscn")
+onready var wall_indoor = preload("res://dream_gen/tiles/walls/test_wall_indoor.tscn")
+onready var wall_outdoor = preload("res://dream_gen/tiles/walls/test_wall_outdoor.tscn")
 
 func _ready():
 	_generate()
@@ -49,10 +50,13 @@ func _spawn_grid():
 					new_floor.rotation.y = globals.dream_rng.randi()%4 * PI/2.0
 					floors_array.append(new_floor)
 				else:
+					var new_wall
 					if has_walls:
-						var new_wall = wall.instance()
-						add_child(new_wall)
-						new_wall.translation = coords
+						new_wall = wall_indoor.instance()
+					else:
+						new_wall = wall_outdoor.instance()
+					add_child(new_wall)
+					new_wall.translation = coords
 
 func _spawn_player():
 	var spawn_floor_id = globals.dream_rng.randi()%floors_array.size()
