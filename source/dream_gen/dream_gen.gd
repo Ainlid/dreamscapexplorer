@@ -68,19 +68,13 @@ func _randomize_mats():
 		var current_mat = globals.tilemats[n]
 		var tex_id = globals.dream_rng.randi()%globals.albedo_textures.size()
 		current_mat.albedo_texture = globals.albedo_textures[tex_id]
-		var albedo_col = Color.white
-		albedo_col.h = globals.dream_rng.randf()
-		albedo_col.s = globals.dream_rng.randf()
-		albedo_col.v = globals.dream_rng.randf_range(0.2, 1.0)
+		var albedo_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 1.0))
 		current_mat.albedo_color = albedo_col
 		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(10.0, 20.0)
 
 func _set_env():
 	var env = world_env.environment
-	var fog_col = Color.black
-	fog_col.h = globals.dream_rng.randf()
-	fog_col.s = globals.dream_rng.randf()
-	fog_col.v = globals.dream_rng.randf_range(0.2, 0.8)
+	var fog_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 0.8))
 	env.background_color = fog_col
 	env.fog_color = fog_col
 	env.ambient_light_color = fog_col
