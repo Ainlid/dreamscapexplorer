@@ -38,9 +38,16 @@ preload("res://bgm_gen/samples/sweep_pad.wav"),
 preload("res://bgm_gen/samples/koto.wav"),
 preload("res://bgm_gen/samples/kalimba.wav")]
 
-var tilemats = [preload("res://dream_gen/materials/tilemat1.tres"),
+var props = [preload("res://dream_gen/props/trees.tscn")]
+
+var props_common = []
+var props_rare = []
+
+var materials = [preload("res://dream_gen/materials/tilemat1.tres"),
 preload("res://dream_gen/materials/tilemat2.tres"),
-preload("res://dream_gen/materials/tilemat3.tres")]
+preload("res://dream_gen/materials/tilemat3.tres"),
+preload("res://dream_gen/materials/propmat1.tres"),
+preload("res://dream_gen/materials/propmat2.tres")]
 
 const albedo_textures = [preload("res://dream_gen/textures/albedo/water.png"),
 preload("res://dream_gen/textures/albedo/stone.png"),
@@ -65,3 +72,14 @@ func _ready():
 
 func _dream_rng_refresh():
 	dream_rng.seed = randi()
+	_pick_props()
+
+func _pick_props():
+	props_common = []
+	for n_common in 4:
+		var prop_id = dream_rng.randi()%props.size()
+		props_common.append(props[prop_id])
+	props_rare = []
+	for n_rare in 4:
+		var prop_id = dream_rng.randi()%props.size()
+		props_rare.append(props[prop_id])

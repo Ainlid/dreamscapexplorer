@@ -10,6 +10,8 @@ var grid_size = 8
 var cell_distance = 40.0
 var floors_array = []
 
+var prop_array = []
+
 onready var floor_flat = preload("res://dream_gen/tiles/floors/test_flat.tscn")
 onready var floor_stairs = preload("res://dream_gen/tiles/floors/test_stairs.tscn")
 
@@ -20,10 +22,10 @@ func _ready():
 	_generate()
 
 func _generate():
-	_spawn_grid()
 	_randomize_mats()
 	_set_env()
 	_set_sun()
+	_spawn_grid()
 	_spawn_player()
 
 func _spawn_grid():
@@ -70,8 +72,8 @@ func _spawn_player():
 	new_player.bound = grid_size / 2.0 * cell_distance
 
 func _randomize_mats():
-	for n in globals.tilemats.size():
-		var current_mat = globals.tilemats[n]
+	for n in globals.materials.size():
+		var current_mat = globals.materials[n]
 		var tex_id = globals.dream_rng.randi()%globals.albedo_textures.size()
 		current_mat.albedo_texture = globals.albedo_textures[tex_id]
 		var albedo_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 1.0))
