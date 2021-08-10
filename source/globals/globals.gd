@@ -40,8 +40,7 @@ preload("res://bgm_gen/samples/kalimba.wav")]
 
 var props = [preload("res://dream_gen/props/trees.tscn")]
 
-var props_common = []
-var props_rare = []
+var prop_set = []
 
 var materials = [preload("res://dream_gen/materials/tilemat1.tres"),
 preload("res://dream_gen/materials/tilemat2.tres"),
@@ -75,11 +74,7 @@ func _dream_rng_refresh():
 	_pick_props()
 
 func _pick_props():
-	props_common = []
+	prop_set = []
 	for n_common in 4:
 		var prop_id = dream_rng.randi()%props.size()
-		props_common.append(props[prop_id])
-	props_rare = []
-	for n_rare in 4:
-		var prop_id = dream_rng.randi()%props.size()
-		props_rare.append(props[prop_id])
+		prop_set.append(props[prop_id])
