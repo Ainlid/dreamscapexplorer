@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/frame_flat.obj-84078e9c72d42c523dd3771c86954d4d.mesh"
+
+[deps]
+
+files=[ "res://.import/frame_flat.obj-84078e9c72d42c523dd3771c86954d4d.mesh" ]
+
+source_file="res://dream_gen/tiles/frames/frame_flat.obj"
+dest_files=[ "res://.import/frame_flat.obj-84078e9c72d42c523dd3771c86954d4d.mesh", "res://.import/frame_flat.obj-84078e9c72d42c523dd3771c86954d4d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
