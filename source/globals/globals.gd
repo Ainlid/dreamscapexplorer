@@ -60,7 +60,16 @@ preload("res://dream_gen/textures/albedo/grass.png"),
 preload("res://dream_gen/textures/albedo/toy_bricks.png"),
 preload("res://dream_gen/textures/albedo/textbook.png"),
 preload("res://dream_gen/textures/albedo/fabric.png"),
-preload("res://dream_gen/textures/albedo/quartz.png")]
+preload("res://dream_gen/textures/albedo/quartz.png"),
+preload("res://dream_gen/textures/albedo/glass.png"),
+preload("res://dream_gen/textures/albedo/sponge.png"),
+preload("res://dream_gen/textures/albedo/paint.png"),
+preload("res://dream_gen/textures/albedo/rug.png"),
+preload("res://dream_gen/textures/albedo/snow.png"),
+preload("res://dream_gen/textures/albedo/leaf.png"),
+preload("res://dream_gen/textures/albedo/leaves.png"),
+preload("res://dream_gen/textures/albedo/foam.png"),
+preload("res://dream_gen/textures/albedo/meat.png")]
 
 var dream_rng
 

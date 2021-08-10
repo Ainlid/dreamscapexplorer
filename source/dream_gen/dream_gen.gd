@@ -57,10 +57,11 @@ func _spawn_grid():
 				if frame_number == player_spawn_frame:
 					var new_player = player.instance()
 					grid.add_child(new_player)
-					var player_offset = Vector3(0.0, 2.0, 20.0)
+					var player_offset = Vector3(0.0, 2.0, 19.0)
 					new_player.translation = new_frame.translation + player_offset
 					new_player.rotation.y = globals.dream_rng.randi()%4 * PI/2.0
-					new_player.bound = grid_size / 2.0 * cell_distance
+					new_player.bound = grid_size / 2.0 * cell_distance + 1.0
+					new_player.fall_limit = -2.0
 				frame_number += 1
 				#add a floor or a wall
 				if globals.dream_rng.randf() > wall_bias:
@@ -95,3 +96,5 @@ func _set_env():
 func _set_sun():
 	sun.rotation.x = globals.dream_rng.randf_range(-PI / 2.0, PI / 2.0)
 	sun.rotation.y = globals.dream_rng.randf_range(0.0, PI * 2.0)
+	var sun_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.5, 1.0))
+	sun.light_color = sun_col
