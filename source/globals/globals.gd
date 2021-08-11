@@ -69,7 +69,14 @@ preload("res://dream_gen/textures/albedo/snow.png"),
 preload("res://dream_gen/textures/albedo/leaf.png"),
 preload("res://dream_gen/textures/albedo/leaves.png"),
 preload("res://dream_gen/textures/albedo/foam.png"),
-preload("res://dream_gen/textures/albedo/meat.png")]
+preload("res://dream_gen/textures/albedo/meat.png"),
+preload("res://dream_gen/textures/albedo/chess.png"),
+preload("res://dream_gen/textures/albedo/wall.png"),
+preload("res://dream_gen/textures/albedo/ceramic_tiles.png"),
+preload("res://dream_gen/textures/albedo/glass_blocks.png"),
+preload("res://dream_gen/textures/albedo/pipes.png"),
+preload("res://dream_gen/textures/albedo/soap_film.png"),
+preload("res://dream_gen/textures/albedo/cogs.png")]
 
 var dream_rng
 
