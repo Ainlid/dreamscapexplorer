@@ -24,7 +24,8 @@ func _set_env():
 	var fog_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 0.8))
 	env.background_color = fog_col
 	env.fog_color = fog_col
-	env.ambient_light_color = fog_col
+	var amb_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), 1.0)
+	env.ambient_light_color = amb_col
 	env.ambient_light_energy = 0.75
 
 func _set_sun():
@@ -44,7 +45,7 @@ func _spawn_layout():
 		new_mat.albedo_texture = globals.textures[tex_id]
 		var albedo_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 1.0))
 		new_mat.albedo_color = albedo_col
-		new_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(10.0, 100.0)
+		new_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(50.0, 100.0)
 		layout_mesh.set_surface_material(n_mat, new_mat)
 
 func _spawn_player():

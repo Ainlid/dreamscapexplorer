@@ -15,7 +15,6 @@ script = ExtResource( 3 )
 environment = SubResource( 1 )
 
 [node name="sun" type="DirectionalLight" parent="."]
-shadow_enabled = true
 
 [node name="bgm_gen" parent="." instance=ExtResource( 1 )]
 

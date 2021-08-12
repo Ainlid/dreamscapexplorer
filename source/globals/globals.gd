@@ -1,6 +1,7 @@
 extends Node
 
-const layouts = []
+const layouts = [preload("res://dream/layouts/bridge_stone.tscn"),
+preload("res://dream/layouts/staircase.tscn")]
 
 const samples = [preload("res://bgm_gen/samples/piano.wav"),
 preload("res://bgm_gen/samples/piano_electro.wav"),
