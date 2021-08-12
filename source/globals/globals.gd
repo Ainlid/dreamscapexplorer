@@ -38,8 +38,13 @@ preload("res://bgm_gen/samples/sweep_pad.wav"),
 preload("res://bgm_gen/samples/koto.wav"),
 preload("res://bgm_gen/samples/kalimba.wav")]
 
-var props = [preload("res://dream_gen/props/trees.tscn")]
+var floors = [preload("res://dream_gen/tiles/floors/floor.tscn")]
 
+var walls = [preload("res://dream_gen/tiles/walls/wall_indoor.tscn"),
+preload("res://dream_gen/tiles/walls/wall_outdoor.tscn"),
+preload("res://dream_gen/tiles/walls/wall_hole.tscn")]
+
+var props = [preload("res://dream_gen/props/trees.tscn")]
 var prop_set = []
 
 var materials = [preload("res://dream_gen/materials/tilemat1.tres"),
