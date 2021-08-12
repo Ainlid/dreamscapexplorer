@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/frame_stairs.obj-d23ae5fd2b058712bccd4c51c199b25c.mesh"
+
+[deps]
+
+files=[ "res://.import/frame_stairs.obj-d23ae5fd2b058712bccd4c51c199b25c.mesh" ]
+
+source_file="res://dream_gen/tiles/frames/frame_stairs.obj"
+dest_files=[ "res://.import/frame_stairs.obj-d23ae5fd2b058712bccd4c51c199b25c.mesh", "res://.import/frame_stairs.obj-d23ae5fd2b058712bccd4c51c199b25c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

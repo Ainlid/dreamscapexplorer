@@ -1,7 +1,5 @@
 extends Node
 
-const layouts = []
-
 const samples = [preload("res://bgm_gen/samples/piano.wav"),
 preload("res://bgm_gen/samples/piano_electro.wav"),
 preload("res://bgm_gen/samples/honky_tonk.wav"),
@@ -40,35 +38,45 @@ preload("res://bgm_gen/samples/sweep_pad.wav"),
 preload("res://bgm_gen/samples/koto.wav"),
 preload("res://bgm_gen/samples/kalimba.wav")]
 
-const textures = [preload("res://dream/textures/albedo/water.png"),
-preload("res://dream/textures/albedo/stone.png"),
-preload("res://dream/textures/albedo/ice.png"),
-preload("res://dream/textures/albedo/brick.png"),
-preload("res://dream/textures/albedo/planks.png"),
-preload("res://dream/textures/albedo/marble.png"),
-preload("res://dream/textures/albedo/metal.png"),
-preload("res://dream/textures/albedo/bark.png"),
-preload("res://dream/textures/albedo/grass.png"),
-preload("res://dream/textures/albedo/toy_bricks.png"),
-preload("res://dream/textures/albedo/textbook.png"),
-preload("res://dream/textures/albedo/fabric.png"),
-preload("res://dream/textures/albedo/quartz.png"),
-preload("res://dream/textures/albedo/glass.png"),
-preload("res://dream/textures/albedo/sponge.png"),
-preload("res://dream/textures/albedo/paint.png"),
-preload("res://dream/textures/albedo/rug.png"),
-preload("res://dream/textures/albedo/snow.png"),
-preload("res://dream/textures/albedo/leaf.png"),
-preload("res://dream/textures/albedo/leaves.png"),
-preload("res://dream/textures/albedo/foam.png"),
-preload("res://dream/textures/albedo/meat.png"),
-preload("res://dream/textures/albedo/chess.png"),
-preload("res://dream/textures/albedo/wall.png"),
-preload("res://dream/textures/albedo/ceramic_tiles.png"),
-preload("res://dream/textures/albedo/glass_blocks.png"),
-preload("res://dream/textures/albedo/pipes.png"),
-preload("res://dream/textures/albedo/soap_film.png"),
-preload("res://dream/textures/albedo/cogs.png")]
+var props = [preload("res://dream_gen/props/trees.tscn")]
+
+var prop_set = []
+
+var materials = [preload("res://dream_gen/materials/tilemat1.tres"),
+preload("res://dream_gen/materials/tilemat2.tres"),
+preload("res://dream_gen/materials/tilemat3.tres"),
+preload("res://dream_gen/materials/propmat1.tres"),
+preload("res://dream_gen/materials/propmat2.tres")]
+
+const albedo_textures = [preload("res://dream_gen/textures/albedo/water.png"),
+preload("res://dream_gen/textures/albedo/stone.png"),
+preload("res://dream_gen/textures/albedo/ice.png"),
+preload("res://dream_gen/textures/albedo/brick.png"),
+preload("res://dream_gen/textures/albedo/planks.png"),
+preload("res://dream_gen/textures/albedo/marble.png"),
+preload("res://dream_gen/textures/albedo/metal.png"),
+preload("res://dream_gen/textures/albedo/bark.png"),
+preload("res://dream_gen/textures/albedo/grass.png"),
+preload("res://dream_gen/textures/albedo/toy_bricks.png"),
+preload("res://dream_gen/textures/albedo/textbook.png"),
+preload("res://dream_gen/textures/albedo/fabric.png"),
+preload("res://dream_gen/textures/albedo/quartz.png"),
+preload("res://dream_gen/textures/albedo/glass.png"),
+preload("res://dream_gen/textures/albedo/sponge.png"),
+preload("res://dream_gen/textures/albedo/paint.png"),
+preload("res://dream_gen/textures/albedo/rug.png"),
+preload("res://dream_gen/textures/albedo/snow.png"),
+preload("res://dream_gen/textures/albedo/leaf.png"),
+preload("res://dream_gen/textures/albedo/leaves.png"),
+preload("res://dream_gen/textures/albedo/foam.png"),
+preload("res://dream_gen/textures/albedo/meat.png"),
+preload("res://dream_gen/textures/albedo/chess.png"),
+preload("res://dream_gen/textures/albedo/wall.png"),
+preload("res://dream_gen/textures/albedo/ceramic_tiles.png"),
+preload("res://dream_gen/textures/albedo/glass_blocks.png"),
+preload("res://dream_gen/textures/albedo/pipes.png"),
+preload("res://dream_gen/textures/albedo/soap_film.png"),
+preload("res://dream_gen/textures/albedo/cogs.png")]
 
 var dream_rng
 
@@ -79,3 +87,10 @@ func _ready():
 
 func _dream_rng_refresh():
 	dream_rng.seed = randi()
+	_pick_props()
+
+func _pick_props():
+	prop_set = []
+	for n_common in 4:
+		var prop_id = dream_rng.randi()%props.size()
+		prop_set.append(props[prop_id])

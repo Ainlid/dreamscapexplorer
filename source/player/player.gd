@@ -9,6 +9,7 @@ export var mouse_sensitivity = 0.002
 export var acceleration = 4.0
 export var friction = 6.0
 export var fall_limit = -100.0
+export var bound = 160.0
 
 var pivot
 
@@ -44,13 +45,17 @@ func _physics_process(delta):
 	velocity.y += gravity * delta
 	if playable:
 		velocity = move_and_slide(velocity, Vector3.UP, true)
-	if translation.y < fall_limit:
+	var global_origin = global_transform.origin
+	if global_origin.y < fall_limit:
+		_restart()
+	if abs(global_origin.x) > bound or abs(global_origin.z) > bound:
 		_restart()
 
 func _restart():
 	if playable:
 		playable = false
-		fader._next_dream()
+		globals._dream_rng_refresh()
+		fader._reload_scene()
 
 func _unhandled_input(event):
 	if event is InputEventMouseMotion and playable:
