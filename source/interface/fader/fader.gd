@@ -45,3 +45,8 @@ func _reload_scene():
 func _change_scene():
 	get_tree().change_scene(path)
 	_fade_in()
+
+func _next_dream():
+	#add code to wake up randomly
+	globals._dream_rng_refresh()
+	_fade_start(dream_path)
