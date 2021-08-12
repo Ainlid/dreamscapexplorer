@@ -90,8 +90,9 @@ func _set_env():
 	var fog_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 0.8))
 	env.background_color = fog_col
 	env.fog_color = fog_col
-	env.ambient_light_color = fog_col
-	env.ambient_light_energy = 0.75
+	var amb_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), 1.0)
+	env.ambient_light_color = amb_col
+	env.ambient_light_energy = globals.dream_rng.randf_range(0.2, 0.8)
 
 func _set_sun():
 	sun.rotation.x = globals.dream_rng.randf_range(-PI / 2.0, PI / 2.0)

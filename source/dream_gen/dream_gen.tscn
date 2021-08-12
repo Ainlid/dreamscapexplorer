@@ -16,3 +16,4 @@ script = ExtResource( 1 )
 environment = SubResource( 1 )
 
 [node name="sun" type="DirectionalLight" parent="."]
+shadow_enabled = true
