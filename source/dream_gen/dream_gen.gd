@@ -12,7 +12,8 @@ var cell_distance = 40.0
 var floors = []
 onready var frame_flat = preload("res://dream_gen/tiles/frames/frame_flat.tscn")
 onready var frame_stairs = preload("res://dream_gen/tiles/frames/frame_stairs.tscn")
-var walls = []
+var wall1
+var wall2
 
 var prop_set = []
 
@@ -30,9 +31,10 @@ func _pick_tiles():
 	for n_floor in 4:
 		var floor_id = globals.dream_rng.randi()%globals.floors.size()
 		floors.append(globals.floors[floor_id])
-	for n_wall in 4:
-		var wall_id = globals.dream_rng.randi()%globals.walls.size()
-		walls.append(globals.walls[wall_id])
+	var wall1_id = globals.dream_rng.randi()%globals.walls.size()
+	wall1 = globals.walls[wall1_id]
+	var wall2_id = globals.dream_rng.randi()%globals.walls.size()
+	wall2 = globals.walls[wall2_id]
 
 func _spawn_grid():
 	var offset_h = -(grid_size - 1.0) / 2.0 * cell_distance
@@ -43,6 +45,7 @@ func _spawn_grid():
 		y_levels = globals.dream_rng.randi_range(2, grid_size)
 	var frame_type_bias = globals.dream_rng.randf_range(0.1, 0.9)
 	var wall_bias = globals.dream_rng.randf_range(0.1, 0.9)
+	var wall_type_bias = globals.dream_rng.randf_range(0.1, 0.9)
 	var player_spawn_frame = globals.dream_rng.randi()%(grid_size * y_levels * grid_size)
 	var frame_number = 0
 	for n_x in grid_size:
@@ -76,8 +79,11 @@ func _spawn_grid():
 					var new_floor = floors[floor_id].instance()
 					new_frame.add_child(new_floor)
 				else:
-					var wall_id = globals.dream_rng.randi()%walls.size()
-					var new_wall = walls[wall_id].instance()
+					var new_wall
+					if globals.dream_rng.randf() > wall_type_bias:
+						new_wall = wall1.instance()
+					else:
+						new_wall = wall2.instance()
 					grid.add_child(new_wall)
 					new_wall.translation = coords
 

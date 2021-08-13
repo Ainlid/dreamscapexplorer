@@ -44,9 +44,6 @@ var walls = [preload("res://dream_gen/tiles/walls/wall_indoor.tscn"),
 preload("res://dream_gen/tiles/walls/wall_outdoor.tscn"),
 preload("res://dream_gen/tiles/walls/wall_hole.tscn")]
 
-var props = [preload("res://dream_gen/props/trees.tscn")]
-var prop_set = []
-
 var materials = [preload("res://dream_gen/materials/tilemat1.tres"),
 preload("res://dream_gen/materials/tilemat2.tres"),
 preload("res://dream_gen/materials/tilemat3.tres"),
@@ -92,10 +89,3 @@ func _ready():
 
 func _dream_rng_refresh():
 	dream_rng.seed = randi()
-	_pick_props()
-
-func _pick_props():
-	prop_set = []
-	for n_common in 4:
-		var prop_id = dream_rng.randi()%props.size()
-		prop_set.append(props[prop_id])
