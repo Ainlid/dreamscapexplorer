@@ -15,8 +15,6 @@ onready var frame_stairs = preload("res://dream_gen/tiles/frames/frame_stairs.ts
 var wall1
 var wall2
 
-var prop_set = []
-
 func _ready():
 	_generate()
 
