@@ -48,7 +48,7 @@ const walls = [preload("res://dream_gen/tiles/walls/wall_full.tscn"),
 preload("res://dream_gen/tiles/walls/wall_half.tscn")]
 var walls_picked
 
-var props = []
+var props = [preload("res://gizmo_cube/gizmo_cube.tscn")]
 var prop_set = []
 
 var materials = [preload("res://dream_gen/materials/tilemat1.tres"),
