@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://player/player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://dream_gen/spawners/floor_spawner/floor_spawner.tscn" type="PackedScene" id=2]
+[ext_resource path="res://dream_gen/spawners/wall_spawner/wall_spawner.tscn" type="PackedScene" id=3]
+[ext_resource path="res://dream_gen/tiles/floors/floor_flat.tscn" type="PackedScene" id=4]
+[ext_resource path="res://dream_gen/spawners/stairs_spawner/stairs_spawner.tscn" type="PackedScene" id=5]
+
+[node name="test" type="Spatial"]
+
+[node name="player" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+
+[node name="floor_spawner2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 40 )
+
+[node name="floor_spawner3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 40 )
+
+[node name="wall_spawner" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 0 )
+
+[node name="wall_spawner2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 0, 40 )
+
+[node name="stairs_spawner" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0 )
+
+[node name="floor_flat" parent="." instance=ExtResource( 4 )]

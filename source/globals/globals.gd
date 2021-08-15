@@ -38,17 +38,19 @@ preload("res://bgm_gen/samples/sweep_pad.wav"),
 preload("res://bgm_gen/samples/koto.wav"),
 preload("res://bgm_gen/samples/kalimba.wav")]
 
-var floors = [preload("res://dream_gen/tiles/floors/floor.tscn")]
+const layouts = [preload("res://dream_gen/layouts/test.tscn")]
 
-var walls = [preload("res://dream_gen/tiles/walls/wall_indoor.tscn"),
-preload("res://dream_gen/tiles/walls/wall_outdoor.tscn"),
-preload("res://dream_gen/tiles/walls/wall_hole.tscn")]
+const floors = [preload("res://dream_gen/tiles/floors/floor_flat.tscn")]
+var floors_picked = []
+const stairs = [preload("res://dream_gen/tiles/stairs/stairs_center.tscn")]
+var stairs_picked
+const walls = [preload("res://dream_gen/tiles/walls/wall_full.tscn"),
+preload("res://dream_gen/tiles/walls/wall_half.tscn")]
+var walls_picked
 
 var materials = [preload("res://dream_gen/materials/tilemat1.tres"),
 preload("res://dream_gen/materials/tilemat2.tres"),
-preload("res://dream_gen/materials/tilemat3.tres"),
-preload("res://dream_gen/materials/propmat1.tres"),
-preload("res://dream_gen/materials/propmat2.tres")]
+preload("res://dream_gen/materials/tilemat3.tres")]
 
 const albedo_textures = [preload("res://dream_gen/textures/albedo/water.png"),
 preload("res://dream_gen/textures/albedo/stone.png"),
@@ -89,3 +91,13 @@ func _ready():
 
 func _dream_rng_refresh():
 	dream_rng.seed = randi()
+	_pick_tiles()
+
+func _pick_tiles():
+	for n_floor in 4:
+		var floor_id = dream_rng.randi()%floors.size()
+		floors_picked.append(floors[floor_id])
+	var stairs_id = dream_rng.randi()%stairs.size()
+	stairs_picked = stairs[stairs_id]
+	var walls_id = dream_rng.randi()%walls.size()
+	walls_picked = walls[walls_id]

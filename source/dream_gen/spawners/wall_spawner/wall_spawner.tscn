@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://gizmo_cube/gizmo_cube.tscn" type="PackedScene" id=1]
+[ext_resource path="res://dream_gen/spawners/wall_spawner/wall_spawner.gd" type="Script" id=2]
+
+[node name="wall_spawner" type="Spatial"]
+script = ExtResource( 2 )
+
+[node name="gizmo_cube" parent="." instance=ExtResource( 1 )]
+transform = Transform( 20, 0, 0, 0, 10, 0, 0, 0, 20, 0, 10, 0 )
