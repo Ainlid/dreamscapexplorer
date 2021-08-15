@@ -6,12 +6,16 @@
 script = ExtResource( 1 )
 
 [node name="audio1" type="AudioStreamPlayer" parent="."]
+bus = "bgm"
 
 [node name="audio2" type="AudioStreamPlayer" parent="."]
+bus = "bgm"
 
 [node name="audio3" type="AudioStreamPlayer" parent="."]
+bus = "bgm"
 
 [node name="audio4" type="AudioStreamPlayer" parent="."]
+bus = "bgm"
 
 [node name="timer" type="Timer" parent="."]
 

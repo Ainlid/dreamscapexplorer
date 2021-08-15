@@ -14,8 +14,7 @@ var current_note = 0
 
 func _ready():
 	_bgm_start()
-	for n in 4:
-		players[n].pitch_scale = _note_to_pitch(globals.dream_rng.randi()%12)
+	_set_pitches()
 
 func _bgm_start():
 	_set_samples()
@@ -29,6 +28,19 @@ func _set_samples():
 		var sample_id = globals.dream_rng.randi()%globals.samples.size()
 		var sample = globals.samples[sample_id]
 		players[n].stream = sample
+
+func _set_pitches():
+	var note_scale
+	if globals.dream_rng.randf() > 0.5:
+		#major scale
+		note_scale = [0, 2, 4, 5, 7, 9, 11]
+	else:
+		#minor scale
+		note_scale = [0, 2, 3, 5, 7, 8, 10]
+	var transposition = globals.dream_rng.randi_range(0, 11)
+	for n in 4:
+		var note_id = globals.dream_rng.randi()%note_scale.size()
+		players[n].pitch_scale = _note_to_pitch(note_scale[note_id] + transposition)
 
 func _sequence():
 	for n_seq1 in 16:

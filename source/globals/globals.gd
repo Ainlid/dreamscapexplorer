@@ -24,7 +24,6 @@ preload("res://bgm_gen/samples/acoustic_bass.wav"),
 preload("res://bgm_gen/samples/finger_bass.wav"),
 preload("res://bgm_gen/samples/picked_bass.wav"),
 preload("res://bgm_gen/samples/slap_bass.wav"),
-preload("res://bgm_gen/samples/synth_bass.wav"),
 preload("res://bgm_gen/samples/pizzicato_strings.wav"),
 preload("res://bgm_gen/samples/harp.wav"),
 preload("res://bgm_gen/samples/choir_oohs.wav"),
@@ -83,7 +82,9 @@ preload("res://dream_gen/textures/albedo/ceramic_tiles.png"),
 preload("res://dream_gen/textures/albedo/glass_blocks.png"),
 preload("res://dream_gen/textures/albedo/pipes.png"),
 preload("res://dream_gen/textures/albedo/soap_film.png"),
-preload("res://dream_gen/textures/albedo/cogs.png")]
+preload("res://dream_gen/textures/albedo/cogs.png"),
+preload("res://dream_gen/textures/albedo/cobblestone.png"),
+preload("res://dream_gen/textures/albedo/asphalt.png")]
 
 var dream_rng
 
