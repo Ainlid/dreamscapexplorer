@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/music_box.wav-16013627190b5988170173fc626a1557.sample"
+path="res://.import/triangle.wav-1bca9a5efc6daa2a01cb2ed4158c8a37.sample"
 
 [deps]
 
-source_file="res://bgm_gen/samples/music_box.wav"
-dest_files=[ "res://.import/music_box.wav-16013627190b5988170173fc626a1557.sample" ]
+source_file="res://bgm_gen/triangle.wav"
+dest_files=[ "res://.import/triangle.wav-1bca9a5efc6daa2a01cb2ed4158c8a37.sample" ]
 
 [params]
 

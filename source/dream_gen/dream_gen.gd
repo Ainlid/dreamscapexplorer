@@ -25,7 +25,7 @@ func _randomize_mats():
 		current_mat.albedo_texture = globals.albedo_textures[tex_id]
 		var color_id = globals.dream_rng.randi()%globals.colors.size()
 		current_mat.albedo_color = globals.colors[color_id]
-		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(10.0, 20.0)
+		current_mat.uv1_scale = 40.0 * Vector3.ONE
 
 func _set_env():
 	var env = world_env.environment
@@ -33,8 +33,7 @@ func _set_env():
 	var fog_color = globals.colors[fog_col_id]
 	env.background_color = fog_color
 	env.fog_color = fog_color
-	var amb_col_id = globals.dream_rng.randi()%globals.colors.size()
-	env.ambient_light_color = globals.colors[amb_col_id]
+	env.ambient_light_color = fog_color
 
 func _set_sun():
 	sun.rotation.x = globals.dream_rng.randf_range(-PI / 2.0, PI / 2.0)

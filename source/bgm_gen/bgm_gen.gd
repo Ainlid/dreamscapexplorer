@@ -20,20 +20,11 @@ func _ready():
 	_bgm_start()
 
 func _bgm_start():
-	_set_samples()
 	_make_scale()
 	_sequence()
 	tempo = globals.dream_rng.randf_range(100.0, 180.0)
 	timer.wait_time = 60.0/tempo
 	timer.start()
-
-func _set_samples():
-	var melody_sample_id = globals.dream_rng.randi()%globals.samples.size()
-	var melody_sample = globals.samples[melody_sample_id]
-	melody.stream = melody_sample
-	var bass_sample_id = globals.dream_rng.randi()%globals.samples.size()
-	var bass_sample = globals.samples[bass_sample_id]
-	bass.stream = bass_sample
 
 func _make_scale():
 	if globals.dream_rng.randf() > 0.5:
