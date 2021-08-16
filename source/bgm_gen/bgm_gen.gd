@@ -27,6 +27,7 @@ func _set_samples():
 	for n in 4:
 		var sample_id = globals.dream_rng.randi()%globals.samples.size()
 		var sample = globals.samples[sample_id]
+		sample = preload("res://bgm_gen/samples/triangle.wav")
 		players[n].stream = sample
 
 func _set_pitches():

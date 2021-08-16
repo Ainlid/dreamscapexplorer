@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/triangle.wav-f4ad3ded9ae62c44b29299d462dba3cd.sample"
+
+[deps]
+
+source_file="res://bgm_gen/samples/triangle.wav"
+dest_files=[ "res://.import/triangle.wav-f4ad3ded9ae62c44b29299d462dba3cd.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
