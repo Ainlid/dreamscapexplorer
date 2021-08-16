@@ -48,11 +48,9 @@ func _sequence():
 	for n_seq2 in 16:
 		seq2.append(globals.dream_rng.randf() > 0.5 and n_seq2%2 == 1)
 	for n_seq3 in 16:
-		var chance = globals.dream_rng.randf()
-		seq3.append(chance > 0.5)
+		seq3.append(globals.dream_rng.randf() > 0.5)
 	for n_seq4 in 16:
-		var chance = globals.dream_rng.randf()
-		seq4.append(chance > 0.5)
+		seq4.append(globals.dream_rng.randf() > 0.5)
 
 func _note_to_pitch(note_value):
 	return pow(2.0, note_value/12.0)
