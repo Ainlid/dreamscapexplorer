@@ -50,6 +50,23 @@ var walls_picked
 var props = [preload("res://gizmo_cube/gizmo_cube.tscn")]
 var prop_set = []
 
+const colors = [Color("#1a1c2c"),
+Color("#5d275d"),
+Color("#b13e53"),
+Color("#ef7d57"),
+Color("#ffcd75"),
+Color("#a7f070"),
+Color("#38b764"),
+Color("#257179"),
+Color("#29366f"),
+Color("#3b5dc9"),
+Color("#41a6f6"),
+Color("#73eff7"),
+Color("#f4f4f4"),
+Color("#94b0c2"),
+Color("#566c86"),
+Color("#333c57")]
+
 var materials = [preload("res://dream_gen/materials/tilemat1.tres"),
 preload("res://dream_gen/materials/tilemat2.tres"),
 preload("res://dream_gen/materials/tilemat3.tres")]

@@ -23,21 +23,21 @@ func _randomize_mats():
 		var current_mat = globals.materials[n]
 		var tex_id = globals.dream_rng.randi()%globals.albedo_textures.size()
 		current_mat.albedo_texture = globals.albedo_textures[tex_id]
-		var albedo_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 1.0))
-		current_mat.albedo_color = albedo_col
+		var color_id = globals.dream_rng.randi()%globals.colors.size()
+		current_mat.albedo_color = globals.colors[color_id]
 		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(10.0, 20.0)
 
 func _set_env():
 	var env = world_env.environment
-	var fog_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 0.8))
-	env.background_color = fog_col
-	env.fog_color = fog_col
-	var amb_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), 1.0)
-	env.ambient_light_color = amb_col
-	env.ambient_light_energy = globals.dream_rng.randf_range(0.2, 0.8)
+	var fog_col_id = globals.dream_rng.randi()%globals.colors.size()
+	var fog_color = globals.colors[fog_col_id]
+	env.background_color = fog_color
+	env.fog_color = fog_color
+	var amb_col_id = globals.dream_rng.randi()%globals.colors.size()
+	env.ambient_light_color = globals.colors[amb_col_id]
 
 func _set_sun():
 	sun.rotation.x = globals.dream_rng.randf_range(-PI / 2.0, PI / 2.0)
 	sun.rotation.y = globals.dream_rng.randf_range(0.0, PI * 2.0)
-	var sun_col = Color().from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), 1.0)
-	sun.light_color = sun_col
+	var color_id = globals.dream_rng.randi()%globals.colors.size()
+	sun.light_color = globals.colors[color_id]
