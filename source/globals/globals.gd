@@ -34,13 +34,14 @@ var materials = [preload("res://dream_gen/materials/tilemat1.tres"),
 preload("res://dream_gen/materials/tilemat2.tres"),
 preload("res://dream_gen/materials/tilemat3.tres")]
 
-const albedo_textures = [preload("res://dream_gen/textures/planks.png"),
-preload("res://dream_gen/textures/liquid.png"),
-preload("res://dream_gen/textures/plates.png"),
-preload("res://dream_gen/textures/glass.png"),
-preload("res://dream_gen/textures/stone.png"),
-preload("res://dream_gen/textures/cobblestone.png"),
-preload("res://dream_gen/textures/text.png")]
+const albedo_textures = [preload("res://dream_gen/textures/pythogorean.png"),
+preload("res://dream_gen/textures/text.png"),
+preload("res://dream_gen/textures/voronoi.png"),
+preload("res://dream_gen/textures/caustics.png"),
+preload("res://dream_gen/textures/grid.png"),
+preload("res://dream_gen/textures/checker.png"),
+preload("res://dream_gen/textures/brick.png"),
+preload("res://dream_gen/textures/hexagon.png")]
 
 var dream_rng
 

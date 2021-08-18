@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/glass.png-c53fb29bb913cd7785ce1149f20d3eda.stex"
+path="res://.import/pythogorean.png-d608ce1574c91e6eac66956bddbd6026.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dream_gen/textures/glass.png"
-dest_files=[ "res://.import/glass.png-c53fb29bb913cd7785ce1149f20d3eda.stex" ]
+source_file="res://dream_gen/textures/pythogorean.png"
+dest_files=[ "res://.import/pythogorean.png-d608ce1574c91e6eac66956bddbd6026.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/planks.png-cedd92becdfc4e9d1eb6253b874126d0.stex"
+path="res://.import/checker.png-934666f024372fc879fd83113aaeb436.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dream_gen/textures/planks.png"
-dest_files=[ "res://.import/planks.png-cedd92becdfc4e9d1eb6253b874126d0.stex" ]
+source_file="res://dream_gen/textures/checker.png"
+dest_files=[ "res://.import/checker.png-934666f024372fc879fd83113aaeb436.stex" ]
 
 [params]
 

@@ -25,7 +25,7 @@ func _randomize_mats():
 		current_mat.albedo_texture = globals.albedo_textures[tex_id]
 		var color_id = globals.dream_rng.randi()%globals.colors.size()
 		current_mat.albedo_color = globals.colors[color_id]
-		current_mat.uv1_scale = 40.0 * Vector3.ONE
+		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(20.0, 60.0)
 
 func _set_env():
 	var env = world_env.environment

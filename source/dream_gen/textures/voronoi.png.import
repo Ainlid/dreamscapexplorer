@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/plates.png-466c7c7b0e6219164b9061d1c551e2ad.stex"
+path="res://.import/voronoi.png-0fdb690baf1fd6d28a12d26232a9b5ca.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://dream_gen/textures/plates.png"
-dest_files=[ "res://.import/plates.png-466c7c7b0e6219164b9061d1c551e2ad.stex" ]
+source_file="res://dream_gen/textures/voronoi.png"
+dest_files=[ "res://.import/voronoi.png-0fdb690baf1fd6d28a12d26232a9b5ca.stex" ]
 
 [params]
 
