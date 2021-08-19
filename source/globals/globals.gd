@@ -5,7 +5,9 @@ const layouts = [preload("res://dream_gen/layouts/test.tscn")]
 const floors = [preload("res://dream_gen/tiles/floors/floor_flat.tscn"),
 preload("res://dream_gen/tiles/floors/floor_blocks.tscn"),
 preload("res://dream_gen/tiles/floors/floor_pyramids.tscn"),
-preload("res://dream_gen/tiles/floors/floor_bridge.tscn")]
+preload("res://dream_gen/tiles/floors/floor_bridge.tscn"),
+preload("res://dream_gen/tiles/floors/floor_hole.tscn"),
+preload("res://dream_gen/tiles/floors/floor_corner.tscn")]
 var floors_picked = []
 
 const stairs = [preload("res://dream_gen/tiles/stairs/stairs_center.tscn"),
