@@ -21,8 +21,8 @@ func _spawn_layout():
 func _randomize_mats():
 	for n in globals.materials.size():
 		var current_mat = globals.materials[n]
-		var tex_id = globals.dream_rng.randi()%globals.albedo_textures.size()
-		current_mat.albedo_texture = globals.albedo_textures[tex_id]
+		var tex_id = globals.dream_rng.randi()%globals.textures.size()
+		current_mat.albedo_texture = globals.textures[tex_id]
 		var color_id = globals.dream_rng.randi()%globals.colors.size()
 		current_mat.albedo_color = globals.colors[color_id]
 		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(20.0, 60.0)

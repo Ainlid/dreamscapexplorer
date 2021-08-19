@@ -4,8 +4,13 @@ const layouts = [preload("res://dream_gen/layouts/test.tscn")]
 
 const floors = [preload("res://dream_gen/tiles/floors/floor_flat.tscn")]
 var floors_picked = []
-const stairs = [preload("res://dream_gen/tiles/stairs/stairs_center.tscn")]
+
+const stairs = [preload("res://dream_gen/tiles/stairs/stairs_center.tscn"),
+preload("res://dream_gen/tiles/stairs/stairs_side.tscn"),
+preload("res://dream_gen/tiles/stairs/stairs_triangle.tscn"),
+preload("res://dream_gen/tiles/stairs/stairs_platforms.tscn")]
 var stairs_picked
+
 const walls = [preload("res://dream_gen/tiles/walls/wall_full.tscn"),
 preload("res://dream_gen/tiles/walls/wall_half.tscn")]
 var walls_picked
@@ -34,7 +39,7 @@ var materials = [preload("res://dream_gen/materials/tilemat1.tres"),
 preload("res://dream_gen/materials/tilemat2.tres"),
 preload("res://dream_gen/materials/tilemat3.tres")]
 
-const albedo_textures = [preload("res://dream_gen/textures/pythogorean.png"),
+const textures = [preload("res://dream_gen/textures/pythogorean.png"),
 preload("res://dream_gen/textures/text.png"),
 preload("res://dream_gen/textures/voronoi.png"),
 preload("res://dream_gen/textures/caustics.png"),
