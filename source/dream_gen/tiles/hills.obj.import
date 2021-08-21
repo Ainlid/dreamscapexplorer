@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/hills.obj-21b7141b3caeb8a2b68f5cad1d68c82c.mesh"
+
+[deps]
+
+files=[ "res://.import/hills.obj-21b7141b3caeb8a2b68f5cad1d68c82c.mesh" ]
+
+source_file="res://dream_gen/tiles/hills.obj"
+dest_files=[ "res://.import/hills.obj-21b7141b3caeb8a2b68f5cad1d68c82c.mesh", "res://.import/hills.obj-21b7141b3caeb8a2b68f5cad1d68c82c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

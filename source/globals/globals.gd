@@ -1,11 +1,14 @@
 extends Node
 
 var tiles = [preload("res://dream_gen/tiles/empty.tscn"),
-preload("res://dream_gen/tiles/trees.tscn")]
+preload("res://dream_gen/tiles/trees.tscn"),
+preload("res://dream_gen/tiles/hills.tscn"),
+preload("res://dream_gen/tiles/houses.tscn")]
 
 var props = [preload("res://gizmo_cube/gizmo_cube.tscn")]
 var prop_set = []
 
+#Sweetie 16
 const colors = [Color("#1a1c2c"),
 Color("#5d275d"),
 Color("#b13e53"),
@@ -34,7 +37,17 @@ preload("res://dream_gen/textures/caustics.png"),
 preload("res://dream_gen/textures/grid.png"),
 preload("res://dream_gen/textures/checker.png"),
 preload("res://dream_gen/textures/brick.png"),
-preload("res://dream_gen/textures/hexagon.png")]
+preload("res://dream_gen/textures/hexagon.png"),
+preload("res://dream_gen/textures/circles_overlap.png"),
+preload("res://dream_gen/textures/scales.png"),
+preload("res://dream_gen/textures/random_lines.png"),
+preload("res://dream_gen/textures/lines.png"),
+preload("res://dream_gen/textures/weave.png"),
+preload("res://dream_gen/textures/truchet_basic.png"),
+preload("res://dream_gen/textures/weave_lines.png"),
+preload("res://dream_gen/textures/truchet_smith.png"),
+preload("res://dream_gen/textures/brain.png"),
+preload("res://dream_gen/textures/grain.png")]
 
 var dream_rng
 
