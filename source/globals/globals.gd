@@ -1,24 +1,7 @@
 extends Node
 
-const layouts = [preload("res://dream_gen/layouts/test.tscn")]
-
-const floors = [preload("res://dream_gen/tiles/floors/floor_flat.tscn"),
-preload("res://dream_gen/tiles/floors/floor_blocks.tscn"),
-preload("res://dream_gen/tiles/floors/floor_pyramids.tscn"),
-preload("res://dream_gen/tiles/floors/floor_bridge.tscn"),
-preload("res://dream_gen/tiles/floors/floor_hole.tscn"),
-preload("res://dream_gen/tiles/floors/floor_corner.tscn")]
-var floors_picked = []
-
-const stairs = [preload("res://dream_gen/tiles/stairs/stairs_center.tscn"),
-preload("res://dream_gen/tiles/stairs/stairs_side.tscn"),
-preload("res://dream_gen/tiles/stairs/stairs_triangle.tscn"),
-preload("res://dream_gen/tiles/stairs/stairs_platforms.tscn")]
-var stairs_picked
-
-const walls = [preload("res://dream_gen/tiles/walls/wall_full.tscn"),
-preload("res://dream_gen/tiles/walls/wall_half.tscn")]
-var walls_picked
+var tiles = [preload("res://dream_gen/tiles/empty.tscn"),
+preload("res://dream_gen/tiles/trees.tscn")]
 
 var props = [preload("res://gizmo_cube/gizmo_cube.tscn")]
 var prop_set = []
@@ -62,17 +45,7 @@ func _ready():
 
 func _dream_rng_refresh():
 	dream_rng.seed = randi()
-	_pick_tiles()
 	_pick_props()
-
-func _pick_tiles():
-	for n_floor in 4:
-		var floor_id = dream_rng.randi()%floors.size()
-		floors_picked.append(floors[floor_id])
-	var stairs_id = dream_rng.randi()%stairs.size()
-	stairs_picked = stairs[stairs_id]
-	var walls_id = dream_rng.randi()%walls.size()
-	walls_picked = walls[walls_id]
 
 func _pick_props():
 	prop_set = []

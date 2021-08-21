@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/empty.obj-b2ac54df30d7e60efcd14c6299c0f15a.mesh"
+
+[deps]
+
+files=[ "res://.import/empty.obj-b2ac54df30d7e60efcd14c6299c0f15a.mesh" ]
+
+source_file="res://dream_gen/tiles/empty.obj"
+dest_files=[ "res://.import/empty.obj-b2ac54df30d7e60efcd14c6299c0f15a.mesh", "res://.import/empty.obj-b2ac54df30d7e60efcd14c6299c0f15a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

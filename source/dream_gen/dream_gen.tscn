@@ -15,3 +15,5 @@ environment = SubResource( 1 )
 
 [node name="sun" type="DirectionalLight" parent="."]
 shadow_enabled = true
+
+[node name="grid" type="Spatial" parent="."]
