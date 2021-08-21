@@ -45,9 +45,7 @@ preload("res://dream_gen/textures/lines.png"),
 preload("res://dream_gen/textures/weave.png"),
 preload("res://dream_gen/textures/truchet_basic.png"),
 preload("res://dream_gen/textures/weave_lines.png"),
-preload("res://dream_gen/textures/truchet_smith.png"),
-preload("res://dream_gen/textures/brain.png"),
-preload("res://dream_gen/textures/grain.png")]
+preload("res://dream_gen/textures/truchet_smith.png")]
 
 var dream_rng
 
