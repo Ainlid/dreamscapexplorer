@@ -32,7 +32,13 @@ func _randomize_mats():
 		var current_mat = globals.materials[n]
 		var color_id = globals.dream_rng.randi()%globals.colors.size()
 		current_mat.albedo_color = globals.colors[color_id]
+		current_mat.normal_enabled = true
+		var normal_id = globals.dream_rng.randi()%globals.normal_maps.size()
+		current_mat.normal_texture = globals.normal_maps[normal_id]
 		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(70.0, 100.0)
+		if globals.dream_rng.randf() < 0.5:
+			current_mat.metallic = 1.0
+		current_mat.roughness = globals.dream_rng.randf_range(0.2, 0.8)
 
 func _set_env():
 	var env = world_env.environment
@@ -44,7 +50,7 @@ func _set_env():
 	env.ambient_light_energy = 0.5
 
 func _set_sun():
-	sun.rotation.x = globals.dream_rng.randf_range(-PI / 2.0, PI / 2.0)
+	sun.rotation.x = globals.dream_rng.randf_range(-PI / 2.0, 0.0)
 	sun.rotation.y = globals.dream_rng.randf_range(0.0, PI * 2.0)
 	var color_id = globals.dream_rng.randi()%globals.colors.size()
 	sun.light_color = globals.colors[color_id]

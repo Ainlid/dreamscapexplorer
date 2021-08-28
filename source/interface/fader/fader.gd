@@ -43,7 +43,6 @@ func _reload_scene():
 	timer.start()
 
 func _next_dream():
-	globals._dream_rng_refresh()
 	_fade_start(dream_path)
 
 func _change_scene():
