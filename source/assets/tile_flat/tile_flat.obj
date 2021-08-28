@@ -1,7 +1,7 @@
-# Blender v2.82 (sub 7) OBJ File: 'tile_block.blend'
+# Blender v2.82 (sub 7) OBJ File: 'tile_flat.blend'
 # www.blender.org
-mtllib tile_block.mtl
-o tile_block
+mtllib tile_flat.mtl
+o tile_flat
 v 20.000000 0.000000 -20.000000
 v 20.000000 -40.000000 -20.000000
 v 20.000000 0.000000 20.000000

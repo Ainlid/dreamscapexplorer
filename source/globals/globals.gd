@@ -1,25 +1,7 @@
 extends Node
 
-var tiles = [preload("res://dream_gen/tiles/empty.tscn"),
-preload("res://dream_gen/tiles/cross.tscn")]
-
-#Sweetie 16
-const colors = [Color("#1a1c2c"),
-Color("#5d275d"),
-Color("#b13e53"),
-Color("#ef7d57"),
-Color("#ffcd75"),
-Color("#a7f070"),
-Color("#38b764"),
-Color("#257179"),
-Color("#29366f"),
-Color("#3b5dc9"),
-Color("#41a6f6"),
-Color("#73eff7"),
-Color("#f4f4f4"),
-Color("#94b0c2"),
-Color("#566c86"),
-Color("#333c57")]
+var tiles = [preload("res://dream_gen/tiles/flat.tscn"),
+preload("res://dream_gen/tiles/bridge_lamps.tscn")]
 
 var materials = [preload("res://materials/floor1.tres"),
 preload("res://materials/floor2.tres"),

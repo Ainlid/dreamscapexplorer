@@ -30,8 +30,7 @@ func _pick_tiles():
 func _randomize_mats():
 	for n in globals.materials.size():
 		var current_mat = globals.materials[n]
-		var color_id = globals.dream_rng.randi()%globals.colors.size()
-		current_mat.albedo_color = globals.colors[color_id]
+		current_mat.albedo_color = Color.from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 0.8))
 		current_mat.normal_enabled = true
 		var normal_id = globals.dream_rng.randi()%globals.normal_maps.size()
 		current_mat.normal_texture = globals.normal_maps[normal_id]
@@ -42,8 +41,7 @@ func _randomize_mats():
 
 func _set_env():
 	var env = world_env.environment
-	var fog_col_id = globals.dream_rng.randi()%globals.colors.size()
-	var fog_color = globals.colors[fog_col_id]
+	var fog_color = Color.from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf_range(0.0, 0.7), globals.dream_rng.randf_range(0.2, 0.8))
 	env.background_color = fog_color
 	env.fog_color = fog_color
 	env.ambient_light_color = fog_color
@@ -52,8 +50,7 @@ func _set_env():
 func _set_sun():
 	sun.rotation.x = globals.dream_rng.randf_range(-PI / 2.0, 0.0)
 	sun.rotation.y = globals.dream_rng.randf_range(0.0, PI * 2.0)
-	var color_id = globals.dream_rng.randi()%globals.colors.size()
-	sun.light_color = globals.colors[color_id]
+	sun.light_color = Color.from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), 1.0)
 
 func _spawn_grid():
 	grid_size = globals.dream_rng.randi_range(1, 4) * 2
