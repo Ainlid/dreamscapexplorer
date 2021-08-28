@@ -1,7 +1,10 @@
 extends Node
 
 var tiles = [preload("res://dream_gen/tiles/flat.tscn"),
-preload("res://dream_gen/tiles/bridge_lamps.tscn")]
+preload("res://dream_gen/tiles/bridge.tscn"),
+preload("res://dream_gen/tiles/bridge_floor.tscn"),
+preload("res://dream_gen/tiles/bridge_lamps.tscn"),
+preload("res://dream_gen/tiles/bridge_lamps_floor.tscn")]
 
 var materials = [preload("res://materials/floor1.tres"),
 preload("res://materials/floor2.tres"),

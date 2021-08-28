@@ -8,7 +8,7 @@ export var jump_speed = 10.0
 export var mouse_sensitivity = 0.002
 export var acceleration = 4.0
 export var friction = 6.0
-export var fall_limit = -10.0
+export var fall_limit = -15.0
 export var bounds_size = 1000.0
 
 var pivot

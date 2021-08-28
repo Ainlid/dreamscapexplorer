@@ -23,7 +23,7 @@ func _generate():
 	_spawn_player()
 
 func _pick_tiles():
-	for n_tiles in 4:
+	for n_tiles in 8:
 		var tile_id = globals.dream_rng.randi()%globals.tiles.size()
 		tiles.append(globals.tiles[tile_id])
 
@@ -34,10 +34,11 @@ func _randomize_mats():
 		current_mat.normal_enabled = true
 		var normal_id = globals.dream_rng.randi()%globals.normal_maps.size()
 		current_mat.normal_texture = globals.normal_maps[normal_id]
-		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(70.0, 100.0)
+		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(40.0, 60.0)
 		if globals.dream_rng.randf() < 0.5:
 			current_mat.metallic = 1.0
-		current_mat.roughness = globals.dream_rng.randf_range(0.2, 0.8)
+		if globals.dream_rng.randf() < 0.5:
+			current_mat.roughness = globals.dream_rng.randf_range(0.2, 0.8)
 
 func _set_env():
 	var env = world_env.environment
