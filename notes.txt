@@ -1,3 +1,4 @@
-albedo textures:
-1. desaturate
-2. tweak levels to make a mostly white texture
+DO NOT GIVE UP
+
+-normal textures-
+5px gaussian blur > height to normal

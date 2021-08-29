@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/tile_flat/tile_flat.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/street_lamp/street_lamp.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/house/house.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/car/car.tscn" type="PackedScene" id=4]
+[ext_resource path="res://link/link.tscn" type="PackedScene" id=5]
+
+[node name="street" type="Spatial"]
+
+[node name="tile_flat" parent="." instance=ExtResource( 1 )]
+
+[node name="house" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -8.54775, 0, -12.4459 )
+
+[node name="house2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 9.78966, 0, -10.2405 )
+
+[node name="house3" parent="." instance=ExtResource( 3 )]
+transform = Transform( -2.18557e-07, 0, -5, 0, 5, 0, 5, 0, -2.18557e-07, 10.6691, 1.90735e-06, 9.87201 )
+
+[node name="car" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.31116, 0.511777, 15.2815 )
+
+[node name="car2" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.36321, 0.511777, 11.5315 )
+
+[node name="car4" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -3.25416, 0.511777, 2.95002 )
+
+[node name="car3" parent="." instance=ExtResource( 4 )]
+transform = Transform( 0.0998409, 0, 0.995003, 0, 1, 0, -0.995003, 0, 0.0998409, -1.36321, 0.511777, 7.94807 )
+
+[node name="street_lamp" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 3.24189, 0, 0 )
+
+[node name="street_lamp2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -13.6712, 0, 0 )
+
+[node name="street_lamp3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -13.6712, 0, 16.8876 )
+
+[node name="street_lamp4" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 2.38387, 0, 16.8876 )
+
+[node name="link" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1.2, 0, 0, 0, 1, -3.19329, 1.26356, -8.31108 )
+
+[node name="link3" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1.2, 0, 0, 0, 1, 7.18331, 1.26356, 15.2958 )
+
+[node name="link2" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1.2, 0, 0, 0, 1, 15.1838, 1.25089, -6.57657 )

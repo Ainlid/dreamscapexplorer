@@ -1,15 +1,14 @@
 extends Node
 
 var tiles = [preload("res://dream_gen/tiles/flat.tscn"),
-preload("res://dream_gen/tiles/bridge.tscn"),
-preload("res://dream_gen/tiles/bridge_floor.tscn"),
-preload("res://dream_gen/tiles/bridge_lamps.tscn"),
-preload("res://dream_gen/tiles/bridge_lamps_floor.tscn")]
+preload("res://dream_gen/tiles/bridge1.tscn"),
+preload("res://dream_gen/tiles/street1.tscn")]
 
 var materials = [preload("res://materials/floor1.tres"),
 preload("res://materials/floor2.tres"),
 preload("res://materials/prop1.tres"),
-preload("res://materials/prop2.tres")]
+preload("res://materials/prop2.tres"),
+preload("res://materials/prop3.tres")]
 
 const normal_maps = [preload("res://textures/normal/brick.png"),
 preload("res://textures/normal/caustics.png"),
