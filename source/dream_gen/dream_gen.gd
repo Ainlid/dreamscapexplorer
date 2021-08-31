@@ -5,6 +5,7 @@ onready var sun = $sun
 onready var grid = $grid
 
 var tiles = []
+var albedo_colors = []
 
 var grid_size = 8
 var tile_distance = 40.0
@@ -17,8 +18,9 @@ func _ready():
 func _generate():
 	_set_env()
 	_set_sun()
-	_randomize_mats()
 	_pick_tiles()
+	_pick_colors()
+	_randomize_mats()
 	_spawn_grid()
 	_spawn_player()
 
@@ -27,10 +29,19 @@ func _pick_tiles():
 		var tile_id = globals.dream_rng.randi()%globals.tiles.size()
 		tiles.append(globals.tiles[tile_id])
 
+func _pick_colors():
+	for n_color in 8:
+		var new_color = Color.from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 0.8))
+		albedo_colors.append(new_color)
+
+func _random_albedo_color():
+	var id = globals.dream_rng.randi()%albedo_colors.size()
+	return(albedo_colors[id])
+
 func _randomize_mats():
 	for n in globals.materials.size():
 		var current_mat = globals.materials[n]
-		current_mat.albedo_color = Color.from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 0.8))
+		current_mat.albedo_color = _random_albedo_color()
 		current_mat.normal_enabled = true
 		var normal_id = globals.dream_rng.randi()%globals.normal_maps.size()
 		current_mat.normal_texture = globals.normal_maps[normal_id]
