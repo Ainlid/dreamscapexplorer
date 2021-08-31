@@ -25,12 +25,12 @@ func _generate():
 	_spawn_player()
 
 func _pick_tiles():
-	for n_tiles in 8:
+	for n in 8:
 		var tile_id = globals.dream_rng.randi()%globals.tiles.size()
 		tiles.append(globals.tiles[tile_id])
 
 func _pick_textures():
-	for n_color in 8:
+	for n in 8:
 		var id = globals.dream_rng.randi()%globals.textures.size()
 		textures.append(globals.textures[id])
 
