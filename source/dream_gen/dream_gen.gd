@@ -5,7 +5,7 @@ onready var sun = $sun
 onready var grid = $grid
 
 var tiles = []
-var textures = []
+var colors = []
 
 var grid_size = 8
 var tile_distance = 40.0
@@ -31,18 +31,21 @@ func _pick_tiles():
 
 func _pick_textures():
 	for n in 8:
-		var id = globals.dream_rng.randi()%globals.textures.size()
-		textures.append(globals.textures[id])
+		var new_color = Color.from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 0.8))
+		colors.append(new_color)
 
-func _random_texture():
-	var id = globals.dream_rng.randi()%textures.size()
-	return(textures[id])
+func _random_color():
+	var id = globals.dream_rng.randi()%colors.size()
+	return(colors[id])
 
 func _randomize_mats():
 	for n in globals.materials.size():
 		var current_mat = globals.materials[n]
-		current_mat.albedo_texture = _random_texture()
-		current_mat.uv1_scale = Vector3.ONE * globals.dream_rng.randf_range(10.0, 20.0)
+		current_mat.albedo_color = _random_color()
+		if globals.dream_rng.randf() < 0.5:
+			current_mat.metallic = 1.0
+		if globals.dream_rng.randf() < 0.5:
+			current_mat.roughness = globals.dream_rng.randf_range(0.2, 0.8)
 
 func _set_env():
 	var env = world_env.environment

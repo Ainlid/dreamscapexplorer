@@ -19,8 +19,6 @@ preload("res://materials/tile.tres"),
 preload("res://materials/tree1.tres"),
 preload("res://materials/tree2.tres")]
 
-const textures = [preload("res://textures/albedo/glass.png")]
-
 var dream_rng
 
 func _ready():
