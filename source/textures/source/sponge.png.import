@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brick.png-435f372a9801bfa1e4a069f3465c7dbb.stex"
+path="res://.import/sponge.png-3e1de533447d769d443b9fe07edbee4c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/source/brick.png"
-dest_files=[ "res://.import/brick.png-435f372a9801bfa1e4a069f3465c7dbb.stex" ]
+source_file="res://textures/source/sponge.png"
+dest_files=[ "res://.import/sponge.png-3e1de533447d769d443b9fe07edbee4c.stex" ]
 
 [params]
 
