@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/glass.png-f441933d7bde92404587004af6246e11.stex"
+path="res://.import/cogs.png-b9825f47884471f73bc797971a2ad29d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/albedo/glass.png"
-dest_files=[ "res://.import/glass.png-f441933d7bde92404587004af6246e11.stex" ]
+source_file="res://textures/source/cogs.png"
+dest_files=[ "res://.import/cogs.png-b9825f47884471f73bc797971a2ad29d.stex" ]
 
 [params]
 
