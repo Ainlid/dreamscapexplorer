@@ -19,7 +19,7 @@ func _generate():
 	_set_env()
 	_set_sun()
 	_pick_tiles()
-	_pick_textures()
+	_pick_colors()
 	_randomize_mats()
 	_spawn_grid()
 	_spawn_player()
@@ -29,7 +29,7 @@ func _pick_tiles():
 		var tile_id = globals.dream_rng.randi()%globals.tiles.size()
 		tiles.append(globals.tiles[tile_id])
 
-func _pick_textures():
+func _pick_colors():
 	for n in 8:
 		var new_color = Color.from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.2, 0.8))
 		colors.append(new_color)
@@ -42,10 +42,7 @@ func _randomize_mats():
 	for n in globals.materials.size():
 		var current_mat = globals.materials[n]
 		current_mat.albedo_color = _random_color()
-		if globals.dream_rng.randf() < 0.5:
-			current_mat.metallic = 1.0
-		if globals.dream_rng.randf() < 0.5:
-			current_mat.roughness = globals.dream_rng.randf_range(0.2, 0.8)
+		
 
 func _set_env():
 	var env = world_env.environment
