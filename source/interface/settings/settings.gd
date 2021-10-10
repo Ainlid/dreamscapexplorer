@@ -21,5 +21,5 @@ func _set_volume():
 
 func _confirmed():
 	_set_volume()
-	save_manager.settings_data["volume"] = vol_value
+	save_manager.save_data["volume"] = vol_value
 	save_manager._save_data()

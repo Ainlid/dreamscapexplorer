@@ -6,8 +6,6 @@ export var walk_speed = 8.0
 export var run_speed = 16.0
 export var jump_speed = 10.0
 export var mouse_sensitivity = 0.002
-export var acceleration = 4.0
-export var friction = 6.0
 export var fall_limit = -15.0
 export var bounds_size = 1000.0
 
@@ -39,9 +37,8 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("jump"):
 			velocity.y = jump_speed
 	var target_vel = dir * speed
-	if !is_on_wall():
-		velocity.x = target_vel.x
-		velocity.z = target_vel.z
+	velocity.x = target_vel.x
+	velocity.z = target_vel.z
 	velocity.y += gravity * delta
 	if playable:
 		velocity = move_and_slide(velocity, Vector3.UP, true)
