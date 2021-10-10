@@ -1,8 +1,8 @@
 extends Node
 
 var tiles = [preload("res://dream_gen/tiles/flat.tscn"),
-preload("res://dream_gen/tiles/bridge1.tscn"),
-preload("res://dream_gen/tiles/street1.tscn"),
+preload("res://dream_gen/tiles/bridge.tscn"),
+preload("res://dream_gen/tiles/street.tscn"),
 preload("res://dream_gen/tiles/forest.tscn")]
 
 var materials = [preload("res://materials/brick.tres"),

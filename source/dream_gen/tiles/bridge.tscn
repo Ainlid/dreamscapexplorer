@@ -6,7 +6,7 @@
 [ext_resource path="res://link/link.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/floor/floor.tscn" type="PackedScene" id=5]
 
-[node name="bridge1" type="Spatial"]
+[node name="bridge" type="Spatial"]
 
 [node name="tile_empty" parent="." instance=ExtResource( 2 )]
 

@@ -14,7 +14,7 @@
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.8153 )
 
 [node name="tree2" parent="." instance=ExtResource( 2 )]
-transform = Transform( 0.729134, 0, -0.953081, 0, 1.2, 0, 0.953081, 0, 0.729134, 6.11161, 0.365224, 4.52352 )
+transform = Transform( 0.729134, 0, -0.953081, 0.0472722, 1.19852, 0.0361646, 0.951908, -0.0595192, 0.728237, 6.11161, 0.529347, 5.49781 )
 
 [node name="tree3" parent="." instance=ExtResource( 2 )]
 transform = Transform( 0.734559, 0, 0.678544, 0.061569, 0.995875, -0.0666516, -0.675745, 0.0907369, 0.731529, -9.34014, 1.69949, 9.10224 )
@@ -47,10 +47,10 @@ transform = Transform( 0.410037, 0, -9.99159, 0, 10, 0, 9.99159, 0, 0.410037, 8.
 transform = Transform( -2.37358, 0, 6.5853, 0, 7, 0, -6.5853, 0, -2.37358, -11.0573, -0.0984917, 10.179 )
 
 [node name="stump" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.64277, 0.157847, -1.09848 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.64277, -0.0123042, -1.09848 )
 
 [node name="stump2" parent="." instance=ExtResource( 4 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.75967, 0.157847, -14.4584 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.75967, -0.0123042, -14.4584 )
 
 [node name="stump3" parent="." instance=ExtResource( 4 )]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -17.0954, -0.232686, 15.9276 )
