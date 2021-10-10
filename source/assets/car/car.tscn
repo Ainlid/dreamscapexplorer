@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://materials/car2.tres" type="Material" id=1]
-[ext_resource path="res://materials/car1.tres" type="Material" id=2]
-[ext_resource path="res://materials/car3.tres" type="Material" id=3]
+[ext_resource path="res://materials/metal.tres" type="Material" id=1]
+[ext_resource path="res://materials/rubber.tres" type="Material" id=2]
+[ext_resource path="res://materials/glass.tres" type="Material" id=3]
 [ext_resource path="res://assets/car/car.obj" type="ArrayMesh" id=4]
 
 [sub_resource type="ConcavePolygonShape" id=1]
@@ -12,8 +12,8 @@ data = PoolVector3Array( 1, 0, -1.1972, 1, 0.7749, -1.1972, 1, 0, -2.5453, 1, 0,
 
 [node name="car" type="MeshInstance" parent="."]
 mesh = ExtResource( 4 )
-material/0 = ExtResource( 2 )
-material/1 = ExtResource( 1 )
+material/0 = ExtResource( 1 )
+material/1 = ExtResource( 2 )
 material/2 = ExtResource( 3 )
 
 [node name="StaticBody" type="StaticBody" parent="car"]
