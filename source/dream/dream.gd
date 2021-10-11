@@ -8,5 +8,4 @@ func _ready():
 	timer.start()
 
 func _timeout():
-	globals._dream_rng_refresh()
-	fader._reload_scene()
+	fader._next_dream()
