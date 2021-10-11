@@ -42,13 +42,14 @@ func _randomize_mats():
 	for n in globals.materials.size():
 		var current_mat = globals.materials[n]
 		current_mat.albedo_color = _random_color()
+		current_mat.roughness = 0.6
 
 func _set_env():
 	var env = world_env.environment
 	var bg_hue = globals.dream_rng.randf()
 	var bg_sat = globals.dream_rng.randf_range(0.0, 0.7)
 	var bg_col = Color.from_hsv(bg_hue, bg_sat, globals.dream_rng.randf_range(0.0, 0.6))
-	var amb_col = Color.from_hsv(bg_hue, bg_sat, globals.dream_rng.randf_range(0.3, 0.5))
+	var amb_col = Color.from_hsv(bg_hue, bg_sat, 0.5)
 	env.background_color = bg_col
 	env.fog_color = bg_col
 	env.ambient_light_color = amb_col
@@ -56,7 +57,7 @@ func _set_env():
 func _set_sun():
 	sun.rotation.x = globals.dream_rng.randf_range(-PI / 2.0, 0.0)
 	sun.rotation.y = globals.dream_rng.randf_range(0.0, PI * 2.0)
-	sun.light_color = Color.from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), globals.dream_rng.randf_range(0.5, 1.0))
+	sun.light_color = Color.from_hsv(globals.dream_rng.randf(), globals.dream_rng.randf(), 1.0)
 
 func _spawn_grid():
 	grid_size = globals.dream_rng.randi_range(1, 4) * 2
